@@ -10,7 +10,11 @@ body {
   background-size: cover;
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  overflow-x: hidden;
 }
+
+
 
 .topnav {
   background-color: #092A56;
@@ -32,7 +36,7 @@ body {
 
 .topnav a.logo {
   width: 50px;
-  margin-left: 140px;
+  margin-left: 10%;
   font-size: 25px;
 }
 
@@ -52,7 +56,7 @@ body {
 
 .topnav ul li.right {
   float: right; 
-  margin-right: 140px;
+  margin-right: 10%;
 }
 
 .topnav ul .right a:hover {
@@ -63,6 +67,29 @@ body {
   border-bottom: 3px solid white;
 }
 
+
+
+
+
+.topnav-burgermenu {
+  display: none;
+}
+
+.navmenu {
+  display: none;
+  }
+#hamburger-menu {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
 .front {
   margin-top: 90px;
   position: relative;
@@ -72,14 +99,14 @@ body {
   width: 100%;
   background-size: cover;
   background-position: center;
-}
+} 
 
 h1 {
   position: absolute;
   color: white;
   font-size: 55px;
   width: 50px;
-  margin-left: 140px;
+  margin-left: 10%;
   margin-top: 250px;
 }
 
@@ -99,39 +126,297 @@ h1 span {
 }
 
 .mainpage-content1 {
-  margin-left: 140px;
-  margin-top: 45px;
-  margin-bottom: 45px;
-  width: 390px;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 69px;
 }
 
-.mainpage-content1 img {
+.content-explore {
+  background-color: #FFE88C;
+  border-radius: 5px;
+  height: 445px;
+  margin-left: 10%;
+  margin-right: 10px;
+  min-width: 390px;
+  max-width: 390px;
+}
+
+.content-explore img {
   padding-top: 25px;
   padding-left: 25px;
   width: 340px;
+  height: 212px;
+  background-size: cover;
 }
 
-.mainpage-content1 p {
+.content-explore p {
   margin-left: 25px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.content-exhibitions {
+  background-color: #B5D9FB;
+  border-radius: 5px;
+  height: 445px;
+  margin-top: 45px;
+  min-width: 390px;
+  max-width: 390px;
   margin-right: 10px;
 }
 
-.mainpage-content1 .p2 {
-  margin-bottom: 35px;
-}
-
-.mainpage-content1 a {
+.content-explore a {
+  position: absolute;
+  top: 1050px;
   color: black;
   text-decoration: none;
   margin-left: 25px;
   font-weight: bold;
 }
 
-.content-explore {
-  background-color: #B5D9FB;
+.content-exhibitions {
+  margin-bottom: 45px;
+  width: 390px;
+  margin-top: 0px;
+}
+
+.content-exhibitions img {
+  padding-top: 25px;
+  padding-left: 25px;
+  width: 340px;
+  height: 212px;
+  background-size: cover;
+}
+
+.content-exhibitions p {
+  margin-left: 25px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.content-exhibitions a {
+  position: absolute;
+  top: 1050px;
+  color: black;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.content-visit {
+  background-color: #F4757E;
   border-radius: 5px;
   height: 445px;
+  min-width: 390px;
+  max-width: 390px;
+  margin-right: 10%;
+  margin-left: 10px;
+  margin-top: 0px;
 }
+
+.content-visit img {
+  padding-top: 25px;
+  padding-left: 25px;
+  width: 340px;
+  height: 212px;
+  object-fit: cover;
+}
+
+.content-visit p {
+  margin-left: 25px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.content-visit span {
+  font-weight: bold;
+}
+
+.content-visit a {
+  position: absolute;
+  top: 1050px;
+  color: black;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.content-visit a:hover, .content-exhibitions a:hover, .content-explore a:hover {
+  border-bottom: 2px solid black;
+}
+
+.mainpage-content2 {
+  width: 100%;
+  margin-bottom: 69px;
+  margin-top: 69px;
+}
+
+.mainpage-biomed {
+  display: flex;
+}
+
+.mainpage-biomed span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mainpage-biomed span a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mainpage-biomed span a img {
+  width: 80%;
+  border-radius: 5px;
+  max-height: 409px;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+.mainpage-biomed h3 {
+  position: absolute;
+  margin-left: 13%;
+  font-size: 33px;
+  margin-top: 20px;
+}
+
+.bio-text {
+  width: 100%;
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 13%;
+  display: inline-flex;
+}
+
+.bio-text p {
+  width: 690px;
+  font-size: 20px;
+}
+
+.bio-text a {
+  bottom: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  right: 27%;
+  position: absolute;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.bio-text a:hover {
+  border-bottom: 2px solid black;
+}
+
+.mainpage-content-sec2 {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 69px;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+
+.mainpage-news {
+  display: flex;
+  margin-right: 6%;
+}
+
+.mainpage-news span {
+  display: flex;
+}
+
+.mainpage-news span a img {
+  max-height: 490px;
+  min-height: 490px;
+  width: 135%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.news-text {
+  position: absolute;
+  margin-right: 0px;
+  top: 1600px;
+  margin-left: 2.5%;
+}
+
+.news-text h3 {
+  color: white;
+  font-size: 33px;
+}
+
+.news-text p {
+  width: 100%;
+  font-size: 20px;
+  color: white;
+}
+
+.news-text a {
+  top: 165%;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+}
+
+.mainpage-location {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.mainpage-location span {
+  display: flex;
+  height: 490px;
+  max-width: 76%;
+}
+
+.mainpage-location span a img {
+  height: 490px;
+  max-width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
+.location-text {
+  position: absolute;
+  margin-left: 2.5%;
+  width: 110px;
+}
+
+.location-text h3 {
+  font-size: 33px;
+  width: 300px;
+}
+
+.location-text a {
+  display: block;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 280px;
+}
+
+.news-text a:hover {
+  border-bottom: 2px solid white;
+}
+
+.location-text a:hover {
+  border-bottom: 2px solid black;
+}
+
+
+
+
+
+
 
 
 
@@ -165,7 +450,7 @@ footer {
 
 .openinghours {
   color: white;
-  padding-left: 140px;
+  padding-left: 10%;
 }
 
 .openinghours span {
@@ -207,7 +492,7 @@ footer {
 }
 
 .contactus {
-  padding-right: 240px;
+  padding-right: 17%;
   list-style: none;
 }
 
@@ -225,6 +510,14 @@ footer {
 
 .contactus li a {
   line-height: 10px;
+}
+
+.aboutus li a:hover, .contactus li a:hover {
+  font-weight: bold;
+}
+
+.aboutus h3:hover, .contactus h3:hover {
+  border-bottom: 3px solid white;
 }
 
 
