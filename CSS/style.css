@@ -1,0 +1,91 @@
+
+html {
+  width: 100%;
+}
+
+body {
+  background-image: url(/photos/background/background-pink.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+.topnav {
+  background-color: #092A56;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  min-height: 90px;
+  max-height: 90px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav a.logo {
+  width: 50px;
+  margin-left: 140px;
+  font-size: 25px;
+}
+
+.topnav a.logo span {
+  font-weight: bolder;
+}
+
+.topnav ul li{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 15px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+
+.topnav ul li.right {
+  float: right; 
+  margin-right: 140px;
+}
+
+.topnav ul .right a:hover {
+  border-bottom: 3px solid white;
+}
+
+.topnav ul .right .active {
+  border-bottom: 3px solid white;
+}
+
+.front {
+  margin-top: 90px;
+  position: relative;
+  background-image: url(/photos/museum-desktop.jpg);
+  display: block;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  font-size: 55px;
+  width: 50px;
+  margin-left: 140px;
+  margin-top: 250px;
+}
+
+h1 span {
+  font-weight: bolder;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+
+
