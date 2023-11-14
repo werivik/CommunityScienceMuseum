@@ -71,6 +71,7 @@ body {
   height: 500px;
   width: 100%;
   background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -86,6 +87,146 @@ h1 span {
   font-weight: bolder;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
+
+.front::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+}
+
+.mainpage-content1 {
+  margin-left: 140px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  width: 390px;
+}
+
+.mainpage-content1 img {
+  padding-top: 25px;
+  padding-left: 25px;
+  width: 340px;
+}
+
+.mainpage-content1 p {
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+.mainpage-content1 .p2 {
+  margin-bottom: 35px;
+}
+
+.mainpage-content1 a {
+  color: black;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.content-explore {
+  background-color: #B5D9FB;
+  border-radius: 5px;
+  height: 445px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #D75760;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer-container h3 {
+  font-size: 25px;
+  line-height: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.openinghours {
+  color: white;
+  padding-left: 140px;
+}
+
+.openinghours span {
+  opacity: 60%;
+}
+
+.days-time {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.days {
+  line-height: 10px;
+}
+
+.time {
+  line-height: 10px;
+  margin-left: 10px;
+}
+
+.aboutus {
+  list-style: none;
+}
+
+.aboutus a {
+  color: white;
+  text-decoration: none;
+}
+
+.aboutus li {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 43px;
+}
+
+.aboutus li a {
+  line-height: 10px;
+}
+
+.contactus {
+  padding-right: 240px;
+  list-style: none;
+}
+
+.contactus a {
+  color: white;
+  text-decoration: none;
+}
+
+.contactus li {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 43px;
+}
+
+.contactus li a {
+  line-height: 10px;
+}
+
 
 
 
