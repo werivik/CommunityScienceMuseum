@@ -778,10 +778,18 @@ footer {
 }
 
 .footer-container h3 {
-  font-size: 25px;
+  font-size: 2.5vw;
   line-height: 0px;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+.footer-container p {
+  font-size: 1.45vw;
+}
+
+.footer-container a {
+  font-size: 1.45vw;
 }
 
 .footer-openinghours {
@@ -819,7 +827,7 @@ footer {
 .aboutus li {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   margin-top: 43px;
 }
 
@@ -840,7 +848,7 @@ footer {
 .contactus li {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   margin-top: 43px;
 }
 
