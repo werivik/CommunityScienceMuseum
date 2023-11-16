@@ -824,14 +824,19 @@ footer {
   text-decoration: none;
 }
 
-.aboutus li {
+.aboutus ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+.aboutus ol li {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-top: 43px;
 }
 
-.aboutus li a {
+.aboutus ol li a {
   line-height: 10px;
 }
 
