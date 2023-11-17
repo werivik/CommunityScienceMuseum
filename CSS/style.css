@@ -47,6 +47,17 @@ body {
   overflow-x: hidden;
 }
 
+.body-exhibitions {
+  background-image: url(/photos/background/background-blue.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .topnav {
   background-color: #092A56;
   overflow: hidden;
@@ -757,6 +768,170 @@ body {
 
 
 
+.front-exhibitions {
+  margin-top: 90px;
+  position: relative;
+  background-image: url(/photos/roberto-nickson-396152.jpg);
+  display: block;
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+} 
+
+.front-exhibitions h1 {
+  position: absolute;
+  color: white;
+  font-size: 55px;
+  margin-left: 10%;
+  margin-top: 200px;
+  width: 400px;
+}
+
+.front-exhibitions::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+}
+
+.exhibitions-sec1 {
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 82%;
+}
+
+.exhibitions {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.exhibitions-box {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.exhibitions-box a {
+  text-decoration: none;
+}
+
+.exhibitions-box-text {
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.exhibitions-box-text h3 {
+  font-size: 25px;
+}
+
+.exhibitions-box-text h3 span {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  backdrop-filter: blur(3px);
+}
+
+.exhibitions-box a img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform .2s;
+}
+
+.exhibitions-box a img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.exhibitions-sec2 {
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.exhibitions-sec2 h2 {
+  font-size: 33px;
+}
+
+.exhibitions-biology {
+  display: flex;
+}
+
+.exhibitions-biology span a img {
+  width: 100%;
+  border-radius: 5px;
+  max-height: 409px;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+.exhibition-biology-box {
+  position: absolute;
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+
+.exhibition-biology-box img {
+  padding: 2%;
+  border-radius: 25px;
+  max-height: 300px;
+  width: 45%;
+  object-fit: cover;
+}
+
+.exhibitions-biology-text { 
+  width: 38%;
+}
+
+.exhibitions-biology-text h3 {
+  font-size: 28px;
+}
+
+.exhibitions-biology-text p {
+  margin-top: 190px;
+  font-size: 20px;
+}
+
+
+
+.accessibility {
+  margin-top: 50px;
+  background-color: #91C0EC;
+  border-radius: 5px;
+}
+
+.accessibility-text {
+  padding: 2%;
+}
+
+.accessibility-text h3 {
+  font-size: 28px;
+}
+
+.accessibility-text p {
+  font-size: 20px;
+}
 
 
 
@@ -778,14 +953,14 @@ footer {
 }
 
 .footer-container h3 {
-  font-size: 2.5vw;
+  font-size: 25px;
   line-height: 0px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
 .footer-container p {
-  font-size: 1.45vw;
+  font-size: 18px;
 }
 
 .footer-container a {
@@ -873,7 +1048,3 @@ footer {
 .aboutus h3:hover, .contactus h3:hover {
   border-bottom: 3px solid white;
 }
-
-
-
-
