@@ -1557,6 +1557,7 @@ html {
   padding-left: 5%;
   line-height: 0px;
   font-size: 30px;
+  padding-top: 4%;
 }
 
 .visit-textbox2-left img {
@@ -1587,10 +1588,163 @@ html {
   margin-left: 250px;
 }
 
+.visit-textbox3 {
+  margin-top: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  background-color: #F6A6A6;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 425px;
+}
+
+.visit-textbox3 p {
+  font-size: 23px;
+}
+
+.visit-textbox3-left {
+  width: 50%;
+}
+
+.visit-textbox3-left h2 {
+  padding-left: 5%;
+  line-height: 0px;
+  font-size: 30px;
+  padding-top: 4%;
+}
+
+.visit-textbox3-left img {
+  height: 300px;
+  width: 500px;
+  padding: 5%;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.visit-textbox3-middle {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  width: 25%;
+  margin-left: 2.5%;
+}
+
+.visit-textbox3-time {
+  margin-left: 5%;
+}
+
+.visit-textbox3-days {
+  font-weight: bold;
+}
+
+.visit-textbox3-time span {
+  opacity: 60%;
+}
+
+.visit-textbox3-right {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  width: 25%;
+  margin-left: 2.5%;
+}
+
+.visit-textbox3-right-days {
+  font-weight: bold;
+}
+
+.visit-textbox3-right-time {
+  margin-left: 5%;
+}
 
 
 
 
+
+
+
+
+
+
+.visit-textbox4 {
+  margin-top: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  background-color: #B5D9FB;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 500px;
+  align-items: center;
+}
+
+.visit-textbox4-left {
+  width: 45%;
+}
+
+.visit-textbox4-left h2 {
+  padding-left: 5%;
+  line-height: 0px;
+  font-size: 30px;
+  padding-top: 4%;
+}
+
+.visit-textbox4-left img {
+  height: 375px;
+  width: 500px;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.visit-textbox4-right {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 46%;
+}
+
+.visit-textbox4-right p span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.visit-textbox4-right span {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.visit-textbox4-right-buttons {
+  display: inline-flex;
+  gap: 25px;
+  height: 25px;
+  font-size: 20px;
+}
+
+.visit-textbox4-right-buttons span a {
+  border-radius: 99px;
+  border: solid 2px #092A56;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #092A56;
+  font-size: 23px;
+}
+
+.visit-textbox4-right-buttons a {
+  border-radius: 99px;
+  border: solid 2px #092A56;
+  padding-top: 2.5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #092A56;
+}
 
 
 
