@@ -3,7 +3,7 @@ html {
   width: 100%;
 }
 
-body {
+.body-pink {
   background-image: url(/photos/background/background-pink.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -14,40 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-.body-mainpage {
-  background-image: url(/photos/background/background-pink.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.body-about {
-  background-image: url(/photos/background/background-pink.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.body-contact {
-  background-image: url(/photos/background/background-pink.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.body-exhibitions {
+.body-blue {
   background-image: url(/photos/background/background-blue.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -58,7 +25,7 @@ body {
   overflow-x: hidden;
 }
 
-.body-explore {
+.body-yellow {
   background-image: url(/photos/background/background-yellow.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -68,6 +35,7 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
 
 .topnav {
   background-color: #092A56;
@@ -130,7 +98,7 @@ body {
 
 .navmenu {
   display: none;
-  }
+}
 #hamburger-menu {
   display: none;
 }
@@ -166,6 +134,12 @@ body {
 .front-mainpage h1 span {
   font-weight: bolder;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+.front-image img {
+  opacity: 0%;
+  height: 0px;
+  width: 0px;
 }
 
 .front-mainpage::after {
@@ -366,35 +340,32 @@ body {
 
 .mainpage-content-sec2 {
   display: inline-flex;
-  justify-content: space-between;
-  gap: 69px;
   width: 100%;
   margin-top: 50px;
   margin-left: 10%;
+  margin-right: 10%;
+  gap: 50px;
 }
 
 .mainpage-news {
-  display: flex;
-  margin-right: 6%;
-}
-
-.mainpage-news span {
-  display: flex;
-}
-
-.mainpage-news span a img {
-  max-height: 490px;
-  min-height: 490px;
-  width: 135%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(/photos/scientific-2040795_1280.jpg);
+  height: 490px;
+  width: 50%;
   border-radius: 5px;
   object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.mainpage-news img {
+  opacity: 0%;
+  height: 0px;
+  width: 0px;
 }
 
 .news-text {
-  position: absolute;
-  margin-right: 0px;
-  top: 1600px;
-  margin-left: 2.5%;
+  color: white;
+  margin-left: 5%;
 }
 
 .news-text h3 {
@@ -406,10 +377,11 @@ body {
   width: 100%;
   font-size: 20px;
   color: white;
+  font-style: italic;
 }
 
 .news-text a {
-  top: 165%;
+  margin-top: 150px;
   font-size: 20px;
   color: white;
   font-weight: bold;
@@ -418,42 +390,39 @@ body {
 }
 
 .mainpage-location {
-  display: flex;
-  margin-right: 10%;
-  margin-left: 5%;
-}
-
-.mainpage-location span {
-  display: flex;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0)), url(/photos/exhibition-1863344_1920.jpg);
   height: 490px;
-  max-width: 76%;
-}
-
-.mainpage-location span a img {
-  height: 490px;
-  max-width: 100%;
+  width: 27%;
   border-radius: 5px;
   object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.mainpage-location img {
+  opacity: 0%;
+  height: 0px;
+  width: 0px;
 }
 
 .location-text {
-  position: absolute;
-  margin-left: 2.5%;
-  width: 110px;
+  margin-left: 5%;
 }
 
 .location-text h3 {
+  color: black;
   font-size: 33px;
-  width: 300px;
+  width: 225px;
 }
 
 .location-text a {
-  display: block;
+  margin-top: 260px;
+  font-size: 20px;
   color: black;
   font-weight: bold;
   text-decoration: none;
-  font-size: 20px;
-  margin-top: 280px;
+  position: absolute;
 }
 
 .news-text a:hover {
@@ -463,10 +432,6 @@ body {
 .location-text a:hover {
   border-bottom: 2px solid black;
 }
-
-
-
-
 
 
 .front-about {
@@ -486,6 +451,12 @@ body {
   font-size: 55px;
   margin-left: 10%;
   margin-top: 250px;
+}
+
+.front-image img {
+  opacity: 0%;
+  height: 0px;
+  width: 0px;
 }
 
 .front-about::after {
@@ -1134,7 +1105,6 @@ body {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
 }
 
-
 .explore-sec1 {
   margin-top: 50px;
   width: 86%;
@@ -1275,6 +1245,359 @@ body {
 
 
 
+.front-kids {
+  margin-top: 90px;
+  position: relative;
+  background-image: url(/photos/samuel-zeller-158996.jpg);
+  display: block;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}  
+
+.front-kids h1 {
+  position: absolute;
+  color: white;
+  font-size: 55px;
+  margin-left: 10%;
+  margin-top: 325px;
+  width: 400px;
+}
+
+.front-kids::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+}
+
+.kids-textbox1 { 
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #F4757E;
+  color: white;
+  height: 170px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kids-textbox1 p {
+  display: flex;
+  height: 60%;
+  align-items: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  font-size: 22px;
+}
+
+.kids-textbox1 a {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  margin-left: 2.5%;
+  font-weight: bold;
+  font-size: 18px;
+  width: 185px;
+  margin-top: 130px;
+}
+
+.kids-textbox1 a:hover {
+  border-bottom: 2px solid white; 
+}
+
+.content-kids-sec1 {
+  margin-top: 75px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+
+
+.kids-mammoth {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: url(/photos/mammoth-1257288_1920.jpg);
+  height: 600px;
+  width: 80%;
+  border-radius: 5px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.kids-mammoth::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.808));
+  border-radius: 5px;
+}
+
+.kids-mammoth img {
+  opacity: 0%;
+  height: 0px;
+  width: 0px;
+}
+
+.kids-mammoth-textbox { 
+  position: absolute;
+  top: 1200px;
+  color: white;
+  font-size: 20px;
+  margin-left: 2.5%;
+  width: 390px;
+}
+
+.kids-mammoth-textbox span {
+  font-weight: bolder;
+}
+
+.kids-textbox2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #F4757E;
+  color: white;
+  height: 325px;
+  border-radius: 5px;
+}
+
+.kids-club { 
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.kids-club img {
+  height: 300px;
+  padding: 2.5%;
+}
+
+.kids-club p {
+  font-size: 20px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.kids-club span {
+  font-weight: bold;
+}
+
+.kids-textbox3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #FCDD62;
+  height: 325px;
+  border-radius: 5px;
+  margin-bottom: 75px;
+}
+
+.kids-holiday { 
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.kids-holiday img {
+  height: 300px;
+  width: 400px;
+  padding: 2.5%;
+  object-fit: cover;
+}
+
+.kids-holiday-textbox {
+  color: black;
+  height: 90%;
+}
+
+.kids-holiday p {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  margin-left: 1.5%;
+  margin-right: 2.5%;
+}
+
+.kids-holiday span {
+  margin-left: 1.5%;
+  margin-right: 4%;
+}
+
+.kids-holiday-textbox a {
+  text-decoration: none;
+  display: flex;
+  margin-top: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid #002F75;
+  color: #002F75;
+  border-radius: 99px;
+  width: 80px;
+  font-weight: bolder;
+}
+
+.kids-holiday-textbox a:hover {
+  background-color: #002F75;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.front-visit {
+  margin-top: 90px;
+  position: relative;
+  background-image: url(/photos/museum-desktop.jpg);
+  display: block;
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+} 
+
+.front-visit h1 {
+  position: absolute;
+  color: white;
+  font-size: 65px;
+  margin-left: 10%;
+  margin-top: 160px;
+  width: 400px;
+}
+
+.front-visit h1 span {
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+.front-visit::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+}
+
+.visit-textbox1 {
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.visit-textbox1 img {
+  height: 500px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.visit-textbox1-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-right: 5%;
+}
+
+.visit-textbox1-text span {
+  font-weight: bold;
+}
+
+.visit-textbox1-text a {
+  text-decoration: none;
+  display: flex;
+  margin-top: 90px;
+  color: black;
+  font-weight: bolder;
+  width: 195px;
+}
+
+.visit-textbox1-text a:hover {
+  border-bottom: 2px solid black;
+}
+
+.visit-textbox2 {
+  margin-top: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  background-color: #B5D9FB;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 500px;
+  align-items: center;
+}
+
+.visit-textbox2-left {
+  width: 50%;
+}
+
+.visit-textbox2-left h2 {
+  padding-left: 5%;
+  line-height: 0px;
+  font-size: 30px;
+}
+
+.visit-textbox2-left img {
+  height: 375px;
+  width: 500px;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.visit-textbox2-right {
+  align-items: center;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 25%;
+}
+
+.visit-textbox2-right span {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.visit-textbox2-right iframe {
+  height: 250px;
+  width: 475px;
+  border-radius: 5px;
+  margin-left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1306,7 +1629,7 @@ footer {
 }
 
 .footer-container a {
-  font-size: 1.45vw;
+  font-size: 18px;
 }
 
 .footer-openinghours {
