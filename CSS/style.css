@@ -90,7 +90,14 @@ html {
 
 
 
-
+@media (max-width: 1350px) { 
+  .topnav a.logo {
+    margin-left: 5%;
+  }
+  .topnav ul li.right {
+    margin-right: 5%;
+  }
+}
 
 
 @media (max-width: 1280px) { 
@@ -148,101 +155,54 @@ html {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
+  height: 445px;
   margin-top: 69px;
+  gap: 15px;
 }
 
 .content-explore {
   background-color: #FFE88C;
   border-radius: 5px;
-  height: 445px;
   margin-left: 10%;
   margin-right: 10px;
-  min-width: 390px;
-  max-width: 390px;
-}
-
-.content-explore img {
-  padding-top: 25px;
-  padding-left: 25px;
-  width: 340px;
-  height: 212px;
-  background-size: cover;
-}
-
-.content-explore p {
-  margin-left: 25px;
-  margin-right: 10px;
-  font-size: 18px;
+  max-width: 30%;
+  min-width: 275px;
 }
 
 .content-exhibitions {
   background-color: #B5D9FB;
   border-radius: 5px;
-  height: 445px;
-  margin-top: 45px;
-  min-width: 390px;
-  max-width: 390px;
+  height: 100%;
+  max-width: 30%;
+  min-width: 275px;
   margin-right: 10px;
-}
-
-.content-explore a {
-  position: absolute;
-  top: 1050px;
-  color: black;
-  text-decoration: none;
-  margin-left: 25px;
-  font-weight: bold;
-}
-
-.content-exhibitions {
-  margin-bottom: 45px;
-  width: 390px;
-  margin-top: 0px;
-}
-
-.content-exhibitions img {
-  padding-top: 25px;
-  padding-left: 25px;
-  width: 340px;
-  height: 212px;
-  background-size: cover;
-}
-
-.content-exhibitions p {
-  margin-left: 25px;
-  margin-right: 10px;
-  font-size: 18px;
-}
-
-.content-exhibitions a {
-  position: absolute;
-  top: 1050px;
-  color: black;
-  text-decoration: none;
-  margin-left: 25px;
-  font-weight: bold;
 }
 
 .content-visit {
   background-color: #F4757E;
   border-radius: 5px;
-  height: 445px;
-  min-width: 390px;
-  max-width: 390px;
+  max-width: 30%;
+  min-width: 275px;
   margin-right: 10%;
   margin-left: 10px;
   margin-top: 0px;
 }
 
-.content-visit img {
+.content-visit img, .content-exhibitions img, .content-explore img  {
   padding-top: 25px;
-  padding-left: 25px;
-  width: 340px;
-  height: 212px;
+  padding-top: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
+  width: 87%;
+  height: 47%;
   object-fit: cover;
 }
 
-.content-visit p {
+.content-visit-text, .content-exhibitions-text, .content-explore-text {
+  height: 125px;
+}
+
+.content-visit-text p, .content-exhibitions-text p, .content-explore-text p {
   margin-left: 25px;
   margin-right: 10px;
   font-size: 18px;
@@ -252,9 +212,8 @@ html {
   font-weight: bold;
 }
 
-.content-visit a {
-  position: absolute;
-  top: 1050px;
+.content-visit a, .content-exhibitions a, .content-explore a {
+  position: relative;
   color: black;
   text-decoration: none;
   margin-left: 25px;
@@ -269,6 +228,11 @@ html {
   width: 100%;
   margin-bottom: 69px;
   margin-top: 69px;
+}
+
+.mainpage-biomed-content {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .mainpage-biomed {
@@ -288,7 +252,7 @@ html {
 }
 
 .mainpage-biomed span a img {
-  width: 80%;
+  width: 100%;
   border-radius: 5px;
   max-height: 409px;
   min-height: 350px;
@@ -297,21 +261,26 @@ html {
 
 .mainpage-biomed h3 {
   position: absolute;
-  margin-left: 13%;
+  margin-left: 5%;
   font-size: 33px;
   margin-top: 20px;
+}
+
+.mainpage-biomed p {
+  display: none;
 }
 
 .bio-text {
   width: 100%;
   position: absolute;
   margin-top: 240px;
-  margin-left: 13%;
+  margin-left: 2.5%;
   display: inline-flex;
 }
 
 .bio-text p {
-  width: 690px;
+  display: block;
+  width: 58%;
   font-size: 20px;
 }
 
@@ -324,10 +293,6 @@ html {
   font-weight: bold;
   color: black;
   text-decoration: none;
-}
-
-.bio-text a:hover {
-  border-bottom: 2px solid black;
 }
 
 .mainpage-content-sec2 {
@@ -417,12 +382,124 @@ html {
   position: absolute;
 }
 
-.news-text a:hover {
-  border-bottom: 2px solid white;
+.location-text a:hover, .news-text a:hover, .bio-text a:hover {
+  border-bottom: 2px solid black;
 }
 
-.location-text a:hover {
-  border-bottom: 2px solid black;
+@media (max-width: 1350px) { 
+  .front-mainpage h1 {
+    margin-left: 5%;
+  }
+  .content-explore {
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+  .content-exhibitions {
+    margin: 0px;
+  }
+  .content-visit {
+    margin-right: 5%;
+    margin-left: 0px;
+  }
+  .mainpage-biomed-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .mainpage-content-sec2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .mainpage-news {
+    width: 56%;
+  }
+  .mainpage-location {
+    width: 30%;
+  }
+  .bio-text a {
+    right: 15%;
+  }
+}
+
+@media (max-width: 1280px) { 
+  .mainpage-content1 {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 975px) {
+
+  .front-mainpage {
+    height: 275px;
+  } 
+
+  .front-mainpage h1 {
+    margin-top: 95px;
+    font-size: 45px;
+  }
+
+  .mainpage-content1 {
+    margin-top: 20px;
+  }
+
+  .content-visit a:hover, .content-exhibitions a:hover, .content-explore a:hover, .location-text a:hover, .news-text a:hover, .bio-text a:hover {
+    border-bottom: 2px solid transparent;
+  }
+
+  .content-visit a, .content-exhibitions a, .content-explore a {
+    font-size: 20px;
+  }
+
+  .mainpage-biomed p {
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 87%;
+    font-size: 13px;
+  }
+
+  .mainpage-biomed h3 {
+    display: flex;
+    justify-content: center;
+    width: 87%;
+    position: absolute;
+    font-size: 33px;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  .bio-text p {
+    margin-top: 55px;
+    width: 87%;
+    font-size: 20px;
+  }
+
+  .bio-text a {
+    display: none;
+  }
+
+  .mainpage-biomed span a img {
+    width: 100%;
+    border-radius: 5px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .mainpage-content-sec2 {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .mainpage-news {
+    width: 90%;
+  }
+  .mainpage-location {
+    width: 90%;
+    height: 250px;
+  }
+  .location-text a {
+    margin-top: 50px;
+    font-size: 22px;
+  }
 }
 
 
@@ -2072,4 +2149,39 @@ footer {
 
 .aboutus h3:hover, .contactus h3:hover {
   border-bottom: 3px solid white;
+}
+
+@media (max-width: 1350px) { 
+  .footer-openinghours {
+    padding-left: 5%;
+  }
+  .contactus {
+    padding-right: 15%;
+  }
+}
+@media (max-width: 975px) {
+  .footer-openinghours {
+    padding-left: 5%;
+  }
+  .contactus {
+    padding-right: 10%;
+  }
+}
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutus ol {
+    display: none;
+  }
+
+  .contactus ol {
+    display: none;
+  }
+
+  .contactus {
+    padding-right: 0%;
+    padding-bottom: 50px;
+  }
 }
