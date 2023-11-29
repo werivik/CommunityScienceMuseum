@@ -65,27 +65,39 @@ html {
   font-weight: bolder;
 }
 
-.topnav ul li{
+.topnav ul {
+  display: inline-flex;
+  float: right;
+  margin-right: 10%;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.topnav ul li.right {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-  padding-top: 15px;
+  gap: 25px;
   text-decoration: none;
   list-style: none;
   font-size: 20px;
 }
 
-.topnav ul li.right {
-  float: right; 
-  margin-right: 10%;
+.topnav ul .right a {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
 }
 
 .topnav ul .right a:hover {
-  border-bottom: 3px solid white;
+  box-shadow: 0 -5px 0px rgb(255, 255, 255) inset, 500px 0 0 rgba(130, 182, 255, 0.2) inset;
+  padding-top: 25px;
+  padding-bottom: 42px;
 }
 
 .topnav ul .right .active {
-  border-bottom: 3px solid white;
+  box-shadow: 0 -5px 0px rgb(255, 255, 255) inset, 500px 0 0 rgba(0, 106, 255, 0.2) inset;
+  padding-top: 25px;
+  padding-bottom: 42px;
 }
 
 
@@ -94,26 +106,17 @@ html {
   .topnav a.logo {
     margin-left: 5%;
   }
-  .topnav ul li.right {
+  .topnav ul {
     margin-right: 5%;
   }
 }
-
-
-@media (max-width: 1280px) { 
-
-}
-
-
-
-
 
 
 
 .front-mainpage {
   margin-top: 90px;
   position: relative;
-  background-image: url(/photos/museum-desktop.jpg);
+  background-image: url(/photos/200kb/museum-desktop_200.webp);
   display: block;
   height: 500px;
   width: 100%;
@@ -305,7 +308,7 @@ html {
 }
 
 .mainpage-news {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(/photos/scientific-2040795_1280.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(/photos/200kb/scientific-2040795_1280_200.webp);
   height: 490px;
   width: 50%;
   border-radius: 5px;
@@ -347,7 +350,7 @@ html {
 }
 
 .mainpage-location {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0)), url(/photos/exhibition-1863344_1920.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0)), url(/photos/200kb/exhibition-1863344_1920_200.webp);
   height: 490px;
   width: 27%;
   border-radius: 5px;
@@ -382,7 +385,11 @@ html {
   position: absolute;
 }
 
-.location-text a:hover, .news-text a:hover, .bio-text a:hover {
+.news-text a:hover {
+  border-bottom: 2px solid white;
+}
+
+.location-text a:hover, .bio-text a:hover {
   border-bottom: 2px solid black;
 }
 
@@ -502,11 +509,10 @@ html {
   }
 }
 
-
 .front-about {
   margin-top: 90px;
   position: relative;
-  background-image: url(/photos/museum-desktop.jpg);
+  background-image: url(/photos/200kb/museum-desktop_200.webp);
   display: block;
   height: 350px;
   width: 100%;
@@ -963,7 +969,6 @@ html {
   }
 }
 
-
 .front-exhibitions {
   margin-top: 90px;
   position: relative;
@@ -1225,9 +1230,6 @@ html {
   }
 }
 
-
-
-
 .accessibility {
   margin-top: 50px;
   background-color: #91C0EC;
@@ -1276,10 +1278,6 @@ html {
   background-color: white;
   color: #91C0EC;
 }
-
-
-
-
 
 .front-biomed {
   margin-top: 90px;
@@ -1476,11 +1474,10 @@ html {
   }
 }
 
-
 .front-explore {
   margin-top: 90px;
   position: relative;
-  background-image: url(/photos/luke-ellis-craven-400722.jpg);
+  background-image: url(/photos/200kb/luke-ellis-craven-400722_200.webp);
   display: block;
   height: 350px;
   width: 100%;
@@ -1613,7 +1610,7 @@ html {
 }
 
 .explore-exhibitions-box {
-  background-image: url(/photos/mavis-cw-164128.jpg);
+  background-image: url(/photos/200kb/mavis-cw-164128_200-1.webp);
   height: 600px;
   width: 80%;
   border-radius: 5px;
@@ -1721,10 +1718,6 @@ html {
     margin-bottom: 500px;
   }
 }
-
-
-
-
 
 .front-kids {
   margin-top: 90px;
@@ -2038,19 +2031,10 @@ html {
   }
 }
 
-
-
-
-
-
-
-
-
-
 .front-visit {
   margin-top: 90px;
   position: relative;
-  background-image: url(/photos/museum-desktop.jpg);
+  background-image: url(/photos/200kb/museum-desktop_200.webp);
   display: block;
   height: 350px;
   width: 100%;
@@ -2383,8 +2367,6 @@ html {
   font-size: 20px;
 }
 
-
-
 @media (max-width: 1350px) { 
   .front-visit {
     height: 275px;
@@ -2569,15 +2551,10 @@ html {
   }
 }
 
-
-
-
-
-
 .front-news {
   margin-top: 90px;
   position: relative;
-  background-image: url(/photos/library-1132573_1920.jpg);
+  background-image: url(/photos/200kb/library-1132573_1920_200.webp);
   display: block;
   height: 350px;
   width: 100%;
@@ -2767,22 +2744,6 @@ html {
   }
 }
 
-@media (max-width: 975px) {
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
   background-color: #D75760;
   width: 100%;
@@ -2954,10 +2915,13 @@ footer {
     margin-bottom: 0px;
   }
   .accessibility a {
+    display: flex;
+    justify-content: center;
     margin-bottom: 45px;
     margin-top: 45px;
+    margin-right: 0px;
     width: 22%;
-    margin-left: 30%;
+    margin-left: 35%;
   }
   .news-openinghours-inline{
     width: 90%;
