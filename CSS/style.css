@@ -1504,7 +1504,7 @@ nav input:checked ~ .menu {
   background-color: #F4757E;
 }
 
-.biomed-c1 span {
+.biomed-c1 div {
   display: inline-flex;
 }
 
@@ -1535,7 +1535,7 @@ nav input:checked ~ .menu {
   background-color: #244979;
 }
 
-.biomed-c2 span {
+.biomed-c2 div {
   display: inline-flex;
 }
 
@@ -1567,7 +1567,7 @@ nav input:checked ~ .menu {
   background-color: #F4757E;
 }
 
-.biomed-c3 span {
+.biomed-c3 div {
   display: inline-flex;
 }
 
