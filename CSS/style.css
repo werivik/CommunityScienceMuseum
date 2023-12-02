@@ -1270,6 +1270,16 @@ nav input:checked ~ .menu {
   align-self: center;
 }
 
+.exhibition-biology-box-image {
+  width: 100%;
+}
+
+.exhibition-biology-box-image img {
+  width: 43%;
+  height: 325px;
+  border-radius: 5px;
+}
+
 .exhibitions-biology-text { 
   position: absolute;
   margin-left: 48%;
@@ -1396,10 +1406,10 @@ nav input:checked ~ .menu {
   }
   .exhibitions-biology-text-button {
     display: block;
-    margin-top: 505px;
+    margin-top: 475px;
     font-size: 18px;
     font-weight: bold;
-    margin-right: 10%;
+    margin-right: 20%;
   }
 }
 
