@@ -1,4 +1,23 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@100;200;300;400;500;900&display=swap');
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif;
+}
+
+h2 {
+  font-family: 'Teko', sans-serif;
+}
+
+h3 {
+  font-family: 'Teko', sans-serif;
+}
+
 html {
   width: 100%;
 }
@@ -47,16 +66,22 @@ header {
   background: #092A56;
   height: 90px;
   transition: 0.3s;
+  font-family: 'Teko', sans-serif;
 }
+
 header .logo {
   display: block;
   width: 50px;
   margin-left: 10%;
-  font-size: 24px;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 400;
 }
+
 header .logo span {
-  font-weight: bolder;
+  font-weight: 800;
 }
+
 header .logo a {
   color: white;
   text-decoration: none;
@@ -77,6 +102,7 @@ header nav {
   z-index: 1;
   transition: 0.5s;
 }
+
 .menu li {
   list-style-type: none;
 }
@@ -86,20 +112,20 @@ header nav {
   text-decoration: none;
   display: block;
   padding: 40px 25px;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 1;
   transition: 0.3s;
 }
 
 .menu li a:hover {
   box-shadow: 0 -5px 0px rgb(255, 255, 255) inset, 500px 0 0 rgba(130, 182, 255, 0.2) inset;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 42px;
 }
 
 .menu li a.active {
   box-shadow: 0 -5px 0px rgb(255, 255, 255) inset, 500px 0 0 rgba(0, 106, 255, 0.2) inset;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 42px;
 }
 
@@ -155,7 +181,7 @@ nav input:checked ~ .hamburger:before {
   top: 0;
   transform: rotate(-45deg);
   width: 30px;
-} 
+}
 
 nav input:checked ~ .hamburger:after {
   top: 0;
@@ -166,7 +192,6 @@ nav input:checked ~ .hamburger:after {
 nav input:checked ~ .menu {
   right: 0;
 }
-
 
 @media (max-width: 1350px) { 
   header .logo {
@@ -208,77 +233,6 @@ nav input:checked ~ .menu {
   }
 }
 
-/*
-
-.topnav {
-  background-color: #092A56;
-  overflow: hidden;
-  top: 0;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  min-height: 90px;
-  max-height: 90px;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-}
-
-.topnav a.logo {
-  width: 50px;
-  margin-left: 10%;
-  font-size: 25px;
-}
-
-.topnav a.logo span {
-  font-weight: bolder;
-}
-
-.topnav ul {
-  display: inline-flex;
-  float: right;
-  margin-right: 10%;
-  margin-top: 0px;
-  padding: 0px;
-}
-
-.topnav ul li.right {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  text-decoration: none;
-  list-style: none;
-  font-size: 20px;
-}
-
-.topnav ul .right a {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 30px;
-}
-
-.topnav ul .right a:hover {
-  box-shadow: 0 -5px 0px rgb(255, 255, 255) inset, 500px 0 0 rgba(130, 182, 255, 0.2) inset;
-  padding-top: 25px;
-  padding-bottom: 42px;
-}
-
-.topnav ul .right .active {
-  box-shadow: 0 -5px 0px rgb(255, 255, 255) inset, 500px 0 0 rgba(0, 106, 255, 0.2) inset;
-  padding-top: 25px;
-  padding-bottom: 42px;
-}
-
-*/
-
-
-
-
-
 
 .front-mainpage {
   margin-top: 90px;
@@ -292,16 +246,17 @@ nav input:checked ~ .menu {
 } 
 
 .front-mainpage h1 {
+  font-weight: 500;
   position: absolute;
   color: white;
-  font-size: 55px;
+  font-size: 65px;
   width: 50px;
   margin-left: 10%;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 .front-mainpage h1 span {
-  font-weight: bolder;
+  font-weight: 800;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
 
@@ -375,7 +330,7 @@ nav input:checked ~ .menu {
 .content-visit-text p, .content-exhibitions-text p, .content-explore-text p {
   margin-left: 25px;
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .content-visit span {
@@ -386,8 +341,9 @@ nav input:checked ~ .menu {
   position: relative;
   color: black;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 30px;
   font-weight: bold;
+  font-family: 'Teko', sans-serif;
 }
 
 .content-visit a:hover, .content-exhibitions a:hover, .content-explore a:hover {
@@ -431,9 +387,10 @@ nav input:checked ~ .menu {
 }
 
 .mainpage-biomed h3 {
+  font-family: 'Teko', sans-serif;
   position: absolute;
   margin-left: 5%;
-  font-size: 33px;
+  font-size: 40px;
   margin-top: 20px;
 }
 
@@ -452,7 +409,7 @@ nav input:checked ~ .menu {
 .bio-text p {
   display: block;
   width: 58%;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .bio-text a {
@@ -515,6 +472,7 @@ nav input:checked ~ .menu {
   font-weight: bold;
   text-decoration: none;
   position: absolute;
+  font-family: 'Roboto Slab', serif;
 }
 
 .mainpage-location {
@@ -541,10 +499,12 @@ nav input:checked ~ .menu {
 .location-text h3 {
   color: black;
   font-size: 33px;
-  width: 225px;
+  width: 200px;
+  font-family: 'Teko', sans-serif;
 }
 
 .location-text a {
+  font-family: 'Roboto Slab', serif;
   margin-top: 260px;
   font-size: 20px;
   color: black;
@@ -646,7 +606,7 @@ nav input:checked ~ .menu {
   .bio-text p {
     margin-top: 55px;
     width: 87%;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .bio-text a {
@@ -691,9 +651,9 @@ nav input:checked ~ .menu {
 .front-about h1 {
   position: absolute;
   color: white;
-  font-size: 55px;
+  font-size: 65px;
   margin-left: 10%;
-  margin-top: 250px;
+  margin-top: 220px;
 }
 
 .front-image img {
@@ -729,11 +689,12 @@ nav input:checked ~ .menu {
 }
 
 .goal-text h2 {
-  font-size: 30px;
+  font-size: 40px;
+  font-family: 'Teko', sans-serif;
 }
 
 .goal-text p {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .about-goal img {
@@ -767,12 +728,14 @@ nav input:checked ~ .menu {
   margin-top: 0px;
   line-break: auto;
   font-size: 20px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .volunteers-text a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .volunteers-text a span {
@@ -805,12 +768,14 @@ nav input:checked ~ .menu {
   margin-top: 0px;
   line-break: auto;
   font-size: 20px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .support-text a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .support-text a span {
@@ -848,6 +813,7 @@ nav input:checked ~ .menu {
 }
 
 .intern-text a {
+  font-family: 'Roboto Slab', serif;
   color: black;
   text-decoration: none;
   font-size: 20px;
@@ -873,6 +839,7 @@ nav input:checked ~ .menu {
     width: 475px;
   }
 }
+
 @media (max-width: 975px) {
   .front-about {
     height: 275px;
@@ -890,6 +857,9 @@ nav input:checked ~ .menu {
   .about-goal img {
     display: none;
   }
+  .about-goal p {
+    width: 85%;
+  }
   .about-volunteers {
     border-radius: 0px;
     width: 100%;
@@ -898,11 +868,17 @@ nav input:checked ~ .menu {
   .volunteers-text {
     margin-left: 5%;
   }
+  .volunteers-text p {
+    font-size: 17px
+  }
   .about-support {
     margin-left: 0px;
   }
   .support-text {
     margin-left: 5%;
+  }
+  .support-text p{
+    font-size: 17px;
   }
   .about-intern {
     border-radius: 0px;
@@ -911,6 +887,9 @@ nav input:checked ~ .menu {
   }
   .intern-text {
     margin-left: 5%;
+  }
+  .intern-text p{
+    font-size: 17px;
   }
 }
 
@@ -928,9 +907,9 @@ nav input:checked ~ .menu {
 .front-contact h1 {
   position: absolute;
   color: white;
-  font-size: 55px;
+  font-size: 65px;
   margin-left: 10%;
-  margin-top: 250px;
+  margin-top: 220px;
 }
 
 .front-contact::after {
@@ -968,7 +947,7 @@ nav input:checked ~ .menu {
 
 .contact-location-text p {
   font-size: 1.2vw;
-  min-width: 150px;
+  min-width: 170px;
 }
 
 .contact-location-text span {
@@ -993,7 +972,8 @@ nav input:checked ~ .menu {
 }
 
 .contact-section p {
-  font-size: 18px;
+  font-size: 16px;
+  width: 100%;
 }
 
 .contact-section h3 {
@@ -1005,7 +985,7 @@ nav input:checked ~ .menu {
 .contact-emailphone {
   background-color: #F6A6A6;
   border-radius: 5px;
-  width: 27%;
+  width: 28%;
   padding: 2.5%;
   text-align: center;
 }
@@ -1056,14 +1036,14 @@ nav input:checked ~ .menu {
 }
 
 .openinghours-days {
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 .openinghours-time {
-  width: 100px;
+  width: 120px;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 1145px) {
   .front-contact {
     height: 275px;
   } 
@@ -1156,10 +1136,7 @@ nav input:checked ~ .menu {
 .front-exhibitions h1 {
   position: absolute;
   color: white;
-  font-size: 55px;
-  margin-left: 10%;
-  margin-top: 200px;
-  width: 400px;
+  font-size: 65px;
 }
 
 .front-exhibitions::after {
@@ -1293,8 +1270,8 @@ nav input:checked ~ .menu {
 
 .exhibitions-biology-text p {
   width: 30%;
-  margin-top: 275px;
-  font-size: 20px;
+  margin-top: 265px;
+  font-size: 16px;
   position: absolute;
 }
 
@@ -1341,7 +1318,7 @@ nav input:checked ~ .menu {
     margin-right: 5%;
   }  
   .exhibitions-biology-text p {
-    font-size: 18px;
+    font-size: 14px;
     width: 40%;
   }
 }
@@ -1399,9 +1376,9 @@ nav input:checked ~ .menu {
     text-align: center;
   }
   .exhibitions-biology-text p {
-    margin-top: 350px;
+    margin-top: 370px;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     width: 80%;
   }
   .exhibitions-biology-text-button {
@@ -1436,6 +1413,7 @@ nav input:checked ~ .menu {
 .accessibility-text p {
   font-size: 20px;
   margin-left: 5%;
+  margin-right: 5%;
   width: 100%;
 }
 
@@ -1454,7 +1432,7 @@ nav input:checked ~ .menu {
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   font-size: 25px;
-  min-width: 80px;
+  min-width: 90px;
 }
 
 .accessibility a:hover {
@@ -1476,9 +1454,6 @@ nav input:checked ~ .menu {
 .front-biomed h1 {
   position: absolute;
   color: white;
-  font-size: 55px;
-  margin-left: 10%;
-  margin-top: 325px;
   width: 400px;
 }
 
@@ -1493,7 +1468,7 @@ nav input:checked ~ .menu {
 }
 
 .biomed-content {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .biomed-c1 {
@@ -1514,7 +1489,7 @@ nav input:checked ~ .menu {
   margin-left: 2.5%;
   padding-right: 5%;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .biomed-c1 img {
@@ -1577,7 +1552,7 @@ nav input:checked ~ .menu {
   margin-left: 2.5%;
   padding-right: 5%;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .biomed-c3 img {
@@ -1765,7 +1740,8 @@ nav input:checked ~ .menu {
 
 .explore-sec2 p {
   margin-left: 10%;
-  font-size: 23px;
+  font-size: 20px;
+  margin-top: 0px;
 }
 
 .explore-sec2 span {
@@ -1879,7 +1855,7 @@ nav input:checked ~ .menu {
     font-size: 25px;
   }
   .explore-sec2 p {
-    font-size: 20px;
+    font-size: 17px;
   }
   .explore-sec2 span {
     font-weight: bold;
@@ -1905,7 +1881,7 @@ nav input:checked ~ .menu {
 .front-kids {
   margin-top: 90px;
   position: relative;
-  background-image: url(/photos/samuel-zeller-158996.jpg);
+  background-image: url(/photos/200kb/samuel-zeller-158996_200.webp);
   display: block;
   height: 500px;
   width: 100%;
@@ -1950,7 +1926,7 @@ nav input:checked ~ .menu {
   align-items: center;
   margin-left: 2.5%;
   margin-right: 2.5%;
-  font-size: 22px;
+  font-size: 17px;
   padding-top: 15px;
 }
 
@@ -1962,8 +1938,9 @@ nav input:checked ~ .menu {
   margin-left: 2.5%;
   font-weight: bold;
   font-size: 18px;
-  width: 23%;
+  width: 20%;
   margin-top: 130px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .kids-textbox1 a:hover {
@@ -1980,7 +1957,7 @@ nav input:checked ~ .menu {
 .kids-mammoth {
   margin-left: 10%;
   margin-right: 10%;
-  background-image: url(/photos/mammoth-1257288_1920.jpg);
+  background-image: url(/photos/200kb/mammoth-1257288_1920_200.webp);
   height: 600px;
   width: 80%;
   border-radius: 5px;
@@ -2008,9 +1985,9 @@ nav input:checked ~ .menu {
   position: absolute;
   top: 1200px;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 2.5%;
-  width: 390px;
+  width: 400px;
 }
 
 .kids-mammoth-textbox span {
@@ -2038,7 +2015,7 @@ nav input:checked ~ .menu {
 }
 
 .kids-club p {
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
@@ -2077,7 +2054,7 @@ nav input:checked ~ .menu {
 .kids-holiday p {
   display: flex;
   flex-direction: row;
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 1.5%;
   margin-right: 2.5%;
 }
@@ -2282,6 +2259,7 @@ nav input:checked ~ .menu {
   color: black;
   font-weight: bolder;
   width: 195px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .visit-textbox1-text a:hover {
@@ -2358,7 +2336,7 @@ nav input:checked ~ .menu {
 }
 
 .visit-textbox3 p {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .visit-textbox3-left {
@@ -2455,13 +2433,13 @@ nav input:checked ~ .menu {
 .visit-textbox4-right {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 17px;
   width: 46%;
 }
 
 .visit-textbox4-right p span {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .visit-textbox4-right span {
@@ -2543,11 +2521,13 @@ nav input:checked ~ .menu {
 
 .visit-yellowbox h3 {
   font-size: 30px;
+  margin-bottom: 0px;
 }
 
 .visit-yellowbox p {
   padding: 4%;
-  font-size: 20px;
+  font-size: 15px;
+  margin: 0px;
 }
 
 @media (max-width: 1350px) { 
@@ -2804,7 +2784,7 @@ nav input:checked ~ .menu {
 .news p {
   padding-left: 4%;
   padding-right: 4%;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .news span {
@@ -3077,7 +3057,6 @@ footer {
 @media (max-width: 1350px) {
   .accessibility {
     width: 90%;
-    text-align: center;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -3088,6 +3067,7 @@ footer {
     flex-direction: column;
   }
   .accessibility-text h3{
+    text-align: center;
     padding: 0px;
     margin: 0px;
     margin-top: 15px;
