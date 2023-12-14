@@ -208,13 +208,14 @@ nav input:checked ~ .menu {
   }
   header {
     padding: 10px 0px;
+    height: 65px;
   }
   .menu {
     justify-content: start;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 93px;
+    top: 68px;
     right: -400px;
     background-image: url(/photos/background/menubackground.png);
     background-repeat: no-repeat;
@@ -235,7 +236,6 @@ nav input:checked ~ .menu {
 
 
 .front-mainpage {
-  margin-top: 90px;
   position: relative;
   background-image: url(/photos/200kb/museum-desktop_200.webp);
   display: block;
@@ -639,11 +639,10 @@ nav input:checked ~ .menu {
 }
 
 .front-about {
-  margin-top: 90px;
   position: relative;
   background-image: url(/photos/200kb/museum-desktop_200.webp);
   display: block;
-  height: 350px;
+  height: 440px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -699,8 +698,7 @@ nav input:checked ~ .menu {
 }
 
 .about-goal img {
-  max-height: 380px;
-  width: 800px;
+  width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -828,19 +826,6 @@ nav input:checked ~ .menu {
   border-bottom: 2px solid black;
 }
 
-@media (max-width: 1100px) { 
-  .goal-text {
-    width: 500px;
-    margin-right: 0px;
-    padding-right: 0px;
-  }
-  .about-goal img {
-    margin-right: 10%;
-    margin-left: 3%;
-    width: 475px;
-  }
-}
-
 @media (max-width: 975px) {
   .front-about {
     height: 275px;
@@ -854,6 +839,9 @@ nav input:checked ~ .menu {
     margin-left: 5%;
     margin-right: 5%;
     max-width: 600px;
+  }
+  .goal-text {
+    width: 100%;
   }
   .about-goal img {
     display: none;
@@ -895,11 +883,10 @@ nav input:checked ~ .menu {
 }
 
 .front-contact {
-  margin-top: 90px;
   position: relative;
   background-image: url(/photos/200kb/museum-desktop_200.webp);
   display: block;
-  height: 350px;
+  height: 440px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -1124,23 +1111,22 @@ nav input:checked ~ .menu {
 }
 
 .front-exhibitions {
-  margin-top: 90px;
   position: relative;
-  background-image: url(/photos/200kb/roberto-nickson-396152_200.webp);
+  background-image: url(/photos/200kb/statue_200.webp);
   display: block;
-  height: 350px;
+  height: 500px;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 45%;
 } 
 
 .front-exhibitions h1 {
   position: absolute;
   color: white;
-  font-size: 65px;
+  font-size: 85px;
   width: 400px;
   margin-left: 10%;
-  margin-top: 150px;
+  margin-top: 220px;
 }
 
 .front-exhibitions::after {
@@ -1209,7 +1195,10 @@ nav input:checked ~ .menu {
 }
 
 .exhibitions-box a img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+.exhibitions-box-text:hover {
+  display: none;
 }
 
 .exhibitions-sec2 {
@@ -1302,6 +1291,7 @@ nav input:checked ~ .menu {
 @media (max-width: 1350px) { 
   .front-exhibitions {
     height: 275px;
+    background-position: 50% 35%;
   } 
   .front-exhibitions h1 {
     margin-top: 140px;
@@ -1445,7 +1435,6 @@ nav input:checked ~ .menu {
 }
 
 .front-biomed {
-  margin-top: 90px;
   position: relative;
   background-image: url(/photos/200kb/lab-512503_1920_200.webp);
   display: block;
@@ -1459,6 +1448,9 @@ nav input:checked ~ .menu {
   position: absolute;
   color: white;
   width: 400px;
+  margin-top: 300px;
+  margin-left: 10%;
+  font-size: 65px;
 }
 
 .front-biomed::after {
@@ -1573,7 +1565,7 @@ nav input:checked ~ .menu {
     height: 275px;
   } 
   .front-biomed h1 {
-    margin-top: 160px;
+    margin-top: 150px;
     font-size: 45px;
     margin-left: 5%;
     width: 300px;
@@ -1637,14 +1629,12 @@ nav input:checked ~ .menu {
 }
 
 .front-explore {
-  margin-top: 90px;
   position: relative;
-  background-image: url(/photos/200kb/luke-ellis-craven-400722_200.webp);
+  background-image: url(/photos/200kb/plato_200.webp);
   display: block;
-  height: 350px;
+  height: 440px;
   width: 100%;
   background-size: cover;
-  background-position: 50% 50%;
 } 
 
 .front-explore h1 {
@@ -1702,16 +1692,16 @@ nav input:checked ~ .menu {
   color: white;
   top: 85%;
   left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
 }
 
 .explore-box-text h3 {
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .explore-box-text h3 span {
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.682);
   padding: 10px;
   padding-left: 25px;
   padding-right: 25px;
@@ -1728,7 +1718,10 @@ nav input:checked ~ .menu {
 }
 
 .explore-box a img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+}
+.explore-box-text:hover {
+  display: none;
 }
 
 .explore-sec2 {
@@ -1773,7 +1766,7 @@ nav input:checked ~ .menu {
 }
 
 .explore-exhibitions-box {
-  background-image: url(/photos/200kb/mavis-cw-164128_200-1.webp);
+  background-image: url(/photos/200kb/elephant_200.webp);
   height: 600px;
   width: 80%;
   border-radius: 5px;
@@ -1844,9 +1837,20 @@ nav input:checked ~ .menu {
 }
 
 @media (max-width: 975px) {
-
   .explore-sec1 h2 {
     font-size: 25px;
+  }
+  .front-explore {
+    position: relative;
+    margin-top: 50px;
+    background-image: url(/photos/200kb/plato_200.webp);
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 10%;
+  } 
+  .explore-box-text {
+    left: 50%;
   }
   .explore-box a img {
     width: 275px;
@@ -1883,20 +1887,19 @@ nav input:checked ~ .menu {
 }
 
 .front-kids {
-  margin-top: 90px;
   position: relative;
-  background-image: url(/photos/200kb/samuel-zeller-158996_200.webp);
+  background-image: url(/photos/200kb/kidssitting_1_200.webp);
   display: block;
   height: 500px;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 25%;
 }  
 
 .front-kids h1 {
   position: absolute;
   color: white;
-  font-size: 55px;
+  font-size: 80px;
   margin-left: 10%;
   margin-top: 325px;
   width: 400px;
@@ -2116,7 +2119,7 @@ nav input:checked ~ .menu {
     width: 90%;
   }
   .kids-mammoth-textbox { 
-    top: 1000px;
+    top: 950px;
   }
   .kids-textbox2 {
     margin-left: 5%;
@@ -2127,7 +2130,6 @@ nav input:checked ~ .menu {
     margin-right: 5%;
   }
 }
-
 @media (max-width: 975px) {
   .kids-textbox1 { 
     height: 250px;
@@ -2151,10 +2153,10 @@ nav input:checked ~ .menu {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.469), rgba(0, 0, 0, 0.887));
   }
   .kids-mammoth-textbox { 
-    top: 750px;
+    top: 650px;
   }
   .kids-mammoth-textbox p {
-    margin-bottom: 170px;
+    margin-bottom: 200px;
   }
 }
 @media (max-width: 750px) {
@@ -2196,7 +2198,6 @@ nav input:checked ~ .menu {
 }
 
 .front-visit {
-  margin-top: 90px;
   position: relative;
   background-image: url(/photos/200kb/museum-desktop_200.webp);
   display: block;
@@ -2262,8 +2263,15 @@ nav input:checked ~ .menu {
   margin-top: 90px;
   color: black;
   font-weight: bolder;
-  width: 195px;
+  width: 220px;
   font-family: 'Roboto Slab', serif;
+}
+
+.visit-textbox1 img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: right;
 }
 
 .visit-textbox1-text a:hover {
@@ -2294,10 +2302,10 @@ nav input:checked ~ .menu {
 }
 
 .visit-textbox2-left img {
-  max-height: 375px;
-  min-height: 275px;
-  max-width: 500px;
-  min-width: 440px;
+  margin-top: 30px;
+  height: 375px;
+  width: 90%;
+  object-fit: cover;
   padding: 5%;
   border-radius: 5px;
 }
@@ -2383,6 +2391,12 @@ nav input:checked ~ .menu {
 
 .visit-textbox3-time span {
   opacity: 60%;
+  text-decoration: line-through;
+}
+
+.visit-textbox3-days span {
+  opacity: 60%;
+  text-decoration: line-through;
 }
 
 .visit-textbox3-right {
@@ -2719,27 +2733,27 @@ nav input:checked ~ .menu {
 }
 
 .front-news {
-  margin-top: 90px;
   position: relative;
-  background-image: url(/photos/200kb/library-1132573_1920_200.webp);
+  background-image: url(/photos/200kb/newspaper_200.webp);
   display: block;
-  height: 350px;
+  height: 440px;
   width: 100%;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50%;
 } 
 
 .front-news h1 {
   position: absolute;
   color: white;
-  font-size: 65px;
+  font-size: 80px;
   margin-left: 10%;
-  margin-top: 160px;
+  margin-top: 200px;
   width: 250px;
+  line-height: 65px;
 }
 
 .front-news h1 span {
-  font-size: 80px;
+  font-size: 105px;
   font-weight: bolder;
 }
 
@@ -2750,7 +2764,7 @@ nav input:checked ~ .menu {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.412), rgba(0,0,0,0.65));
 }
 
 .news-content {
@@ -2870,18 +2884,23 @@ nav input:checked ~ .menu {
   font-weight: bold;
 }
 
+.openinghours-days span, .openinghours-time span {
+  text-decoration: line-through;
+}
+
 @media (max-width: 1350px) { 
   .front-news {
     height: 275px;
   } 
   .front-news h1 {
     margin-top: 120px;
-    font-size: 45px;
+    font-size: 65px;
     margin-left: 5%;
     width: 250px;
+    line-height: 55px;
   }
   .front-news h1 span {
-    font-size: 60px;
+    font-size: 85px;
   }
   .news-content {
     margin-top: 50px;
