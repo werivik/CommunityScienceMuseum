@@ -193,47 +193,6 @@ nav input:checked ~ .menu {
   right: 0;
 }
 
-@media (max-width: 1350px) { 
-  header .logo {
-    margin-left: 5%;
-  }
-  header nav {
-    margin-right: 3%;
-  }
-}
-
-@media (max-width: 950px) {
-  .hamburger, .hamburger-menu {
-    display: block;
-  }
-  header {
-    padding: 10px 0px;
-    height: 65px;
-  }
-  .menu {
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 68px;
-    right: -400px;
-    background-image: url(/photos/background/menubackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 100%;
-    padding-left: 0px;
-  }
-  .menu li {
-    width: 100%;
-  }
-  .menu li a {
-    padding: 30px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-}
-
 .front-mainpage {
   position: relative;
   background-image: url(/photos/200kb/museum-desktop_200.webp);
@@ -525,123 +484,6 @@ nav input:checked ~ .menu {
   border-bottom: 2px solid black;
 }
 
-@media (max-width: 1350px) { 
-  .front-mainpage h1 {
-    margin-left: 5%;
-  }
-  .content-explore {
-    margin-left: 5%;
-    margin-right: 0px;
-  }
-  .content-exhibitions {
-    margin: 0px;
-  }
-  .content-visit {
-    margin-right: 5%;
-    margin-left: 0px;
-  }
-  .mainpage-biomed-content {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .mainpage-content-sec2 {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .mainpage-news {
-    width: 56%;
-  }
-  .mainpage-location {
-    width: 30%;
-  }
-  .bio-text a {
-    right: 19%;
-  }
-}
-
-@media (max-width: 1280px) { 
-  .mainpage-content1 {
-    overflow-x: scroll;
-  }
-}
-
-@media (max-width: 975px) {
-
-  .front-mainpage {
-    height: 275px;
-  } 
-
-  .front-mainpage h1 {
-    margin-top: 75px;
-    font-size: 45px;
-    line-height: 55px;
-  }
-
-  .mainpage-content1 {
-    margin-top: 20px;
-  }
-
-  .content-visit a:hover, .content-exhibitions a:hover, .content-explore a:hover, .location-text a:hover, .news-text a:hover, .bio-text a:hover {
-    border-bottom: 2px solid transparent;
-  }
-
-  .content-visit a, .content-exhibitions a, .content-explore a {
-    font-size: 20px;
-  }
-
-  .mainpage-biomed p {
-    display: block;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 87%;
-    font-size: 13px;
-  }
-
-  .mainpage-biomed h3 {
-    display: flex;
-    justify-content: center;
-    width: 87%;
-    position: absolute;
-    font-size: 33px;
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-
-  .bio-text p {
-    margin-top: 55px;
-    width: 83.5%;
-    font-size: 17px;
-  }
-
-  .bio-text a {
-    display: none;
-  }
-
-  .mainpage-biomed span a img {
-    width: 100%;
-    border-radius: 5px;
-    height: 500px;
-    object-fit: cover;
-  }
-  
-  .mainpage-content-sec2 {
-    display: inline-flex;
-    flex-direction: column;
-  }
-  .mainpage-news {
-    width: 90%;
-  }
-  .mainpage-location {
-    width: 90%;
-    height: 250px;
-  }
-  .location-text a {
-    margin-top: 50px;
-    font-size: 22px;
-  }
-}
-
 .front-about,.front-contact {
   position: relative;
   background-image: url(/photos/200kb/museum-desktop_200.webp);
@@ -824,62 +666,6 @@ nav input:checked ~ .menu {
   border-bottom: 2px solid black;
 }
 
-@media (max-width: 975px) {
-  .front-about,.front-contact {
-    height: 275px;
-  } 
-  .front-about h1, .front-contact h1 {
-    margin-top: 185px;
-    font-size: 45px;
-    margin-left: 5%;
-  }
-  .about-goal {
-    margin-left: 5%;
-    margin-right: 5%;
-    max-width: 600px;
-  }
-  .goal-text {
-    width: 100%;
-  }
-  .about-goal img {
-    display: none;
-  }
-  .about-goal p {
-    width: 85%;
-  }
-  .about-volunteers {
-    border-radius: 0px;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .volunteers-text {
-    margin-left: 5%;
-  }
-  .volunteers-text p {
-    font-size: 17px
-  }
-  .about-support {
-    margin-left: 0px;
-  }
-  .support-text {
-    margin-left: 5%;
-  }
-  .support-text p{
-    font-size: 17px;
-  }
-  .about-intern {
-    border-radius: 0px;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .intern-text {
-    margin-left: 5%;
-  }
-  .intern-text p{
-    font-size: 17px;
-  }
-}
-
 .contact-location {
   background-color: #B5D9FB;
   margin-left: 10%;
@@ -999,77 +785,6 @@ nav input:checked ~ .menu {
 
 .openinghours-time {
   width: 120px;
-}
-
-@media (max-width: 1145px) {
-  .contact-location {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-    flex-direction: column;
-    text-align: center;
-  }
-  .contact-location-text h2 {
-    font-size: 25px;
-  }
-    .contact-location-text p {
-    font-size: 18px;
-  }
-  .contact-location iframe {
-    align-self: center;
-    max-height: 380px;
-    max-width: 90%;
-    object-fit: cover;
-    padding: 4%;
-    border: none;
-  }
-  .contact-section p {
-    font-size: 18px;
-  }
-  .contact-section h3 {
-    font-size: 24px;
-    padding: 0px;
-    padding-top: 2.5%;
-    margin: 0px;
-  }
-  .contact-section {
-    display: inline-flex;
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
-    gap: 20px;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .contact-emailphone {
-    background-color: #F6A6A6;
-    border-radius: 0px;
-    width: 100%;
-    padding: 2.5%;
-    text-align: center;
-  }
-  .contact-phone {
-    margin-top: 10%;
-  }
-  .contact-socials {
-    background-color: #F6A6A6;
-    border-radius: 0px;
-    width: 100%;
-    padding: 2.5%;
-    text-align: center;
-  }
-  .contact-socials h3 {
-    margin-bottom: 5%;
-  }
-  .contact-openinghours {
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #FFE88C;
-    border-radius: 5px;
-    width: 85%;
-    padding: 2.5%;
-  }
 }
 
 .front-exhibitions {
@@ -1242,110 +957,6 @@ nav input:checked ~ .menu {
   text-decoration: none;
 }
 
-@media (max-width: 1500px) {
-  .exhibitions-sec1 {
-    overflow-x: scroll;
-  }
-  .exhibitions {
-    overflow-y: hidden;
-  }
-}
-@media (max-width: 1350px) { 
-  .front-exhibitions {
-    height: 275px;
-    background-position: 50% 35%;
-  } 
-  .front-exhibitions h1, .front-explore h1{
-    margin-top: 150px;
-    font-size: 45px;
-    margin-left: 5%;
-    width: 300px;
-  }
-  .exhibitions-sec1 {
-    margin-left: 4%;
-    margin-right: 5%;
-    width: 90%;
-  }
-  .exhibitions {
-    gap: 15px;
-  }
-  .exhibitions-sec2 {
-    margin-left: 5%;
-    margin-right: 5%;
-  }  
-  .exhibitions-biology-text p {
-    font-size: 14px;
-    width: 40%;
-  }
-}
-@media (max-width: 975px) {
-  .exhibitions-sec1 {
-    margin-top: 20px;
-  }
-  .exhibitions-box a img {
-    width: 250px;
-    height: 400px;
-  }
-  .exhibitions-sec2 h2 {
-    display: none;
-  }
-  .exhibitions-sec2 {
-    margin-top: 50px;
-  }
-  .exhibitions-biology span a img {
-    display: none;
-  }
-  .exhibition-biology-box img {
-    display: none;
-  }
-  .exhibitions-biology {
-    display: block;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.900)), url(/photos/200kb/samuel-zeller-113381_200.webp);
-    width: 100%;
-    height: 550px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 5px;
-  }
-  .exhibition-biology-box {
-    width: 100%;
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: inline-flex;
-    flex-direction: column;
-  }
-  .exhibitions-biology-text span {
-    display: block;
-    width: 80%;
-    color: white;
-  }
-  .exhibitions-biology-text h3{
-    margin-top: 40px;
-    width: 80%;
-    color: white;
-  }
-  .exhibitions-biology-text {
-    margin-left: 0px;
-    display: inline-flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .exhibitions-biology-text p {
-    margin-top: 370px;
-    color: white;
-    font-size: 18px;
-    width: 80%;
-  }
-  .exhibitions-biology-text-button {
-    display: block;
-    margin-top: 475px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 20%;
-  }
-}
-
 .front-biomed {
   position: relative;
   background-image: url(/photos/200kb/lab-512503_1920_200.webp);
@@ -1470,74 +1081,6 @@ nav input:checked ~ .menu {
   border-radius: 5px;
   padding: 0px;
   margin: 0px;
-}
-
-@media (max-width: 1350px) { 
-  .front-biomed {
-    height: 275px;
-  } 
-  .front-biomed h1 {
-    margin-top: 150px;
-    font-size: 45px;
-    margin-left: 5%;
-    width: 300px;
-  }
-  .biomed-c1 {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .biomed-c2 {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .biomed-c3 {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media (max-width: 975px) {
-  .biomed-c1 {
-    border-radius: 5px;
-    height: 400px;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.900)), url(/photos/200kb/samuel-zeller-113381_200.webp);
-    background-position: center;
-    background-size: cover;
-  }
-  .biomed-c1 span {
-    display: flex;
-  }
-  .biomed-c1 p {
-    position: absolute;
-    margin-top: 285px;
-    width: 85%;
-  }
-  .biomed-c1 img {
-    opacity: 0;
-  }
-  .biomed-c2 img{
-    display: none;
-  }
-  .biomed-textbox {
-    margin-top: 15%;
-  }
-  .biomed-c3 {
-    border-radius: 5px;
-    height: 400px;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.900)), url(/photos/200kb/genoa-956405_1920_200.webp);
-    background-position: center;
-    background-size: cover;
-  }
-  .biomed-c3 span {
-    display: flex;
-  }
-  .biomed-c3 p {
-    position: absolute;
-    margin-top: 285px;
-    width: 85%;
-  }
-  .biomed-c3 img {
-    opacity: 0;
-  }
 }
 
 .front-explore {
@@ -1682,87 +1225,6 @@ nav input:checked ~ .menu {
   border-bottom: 2px solid white;
 }
 
-@media (max-width: 1475px) {
-  .explorations {
-    overflow-y: hidden;
-    overflow-x: scroll;
-    width: 100%;
-  }
-}
-
-@media (max-width: 1350px) { 
-  .front-explore {
-    height: 275px;
-  } 
-  .explore-sec1 h2 {
-    margin-left: 5%;
-  }
-  .explorations {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .explore-sec2 h2 {
-    margin-left: 5%;
-  }
-  .explore-sec2 p {
-    margin-left: 5%;
-  }
-  .explore-exhibitions {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .explore-exhibitions-box {
-    width: 90%;
-  }
-  
-}
-
-@media (max-width: 975px) {
-  .explore-sec1 h2 {
-    font-size: 25px;
-  }
-  .front-explore {
-    margin-top: 40px;
-    height: 235px;
-    background-position: 50% 10%;
-  } 
-  .explore-box-text {
-    left: 50%;
-  }
-  .explore-box a img {
-    width: 275px;
-    height: 450px;
-  }
-  .explore-sec2 {
-    margin-top: 50px;
-  }
-  .explore-sec2 h2 {
-    font-size: 25px;
-  }
-  .explore-sec2 p {
-    font-size: 17px;
-  }
-  .explore-sec2 span {
-    font-weight: bold;
-    font-size: 21px;
-  }
-  .explore-exhibitions-box {
-    height: 475px;
-    width: 90%;
-    text-align: center;
-  }
-  .explore-exhibitions-box p {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    margin-top: 400px;
-    font-size: 24px;
-  }
-  .explore-exhibitions {
-    margin-bottom: 500px;
-  }
-}
-
 .front-kids {
   position: relative;
   background-image: url(/photos/200kb/kidssitting_1_200.webp);
@@ -1790,6 +1252,11 @@ nav input:checked ~ .menu {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+}
+
+.content-kids-sec1 h2 {
+  position: absolute;
+  left: 50000px;
 }
 
 .kids-textbox1 { 
@@ -1967,111 +1434,6 @@ nav input:checked ~ .menu {
 .kids-holiday-textbox a:hover {
   background-color: #002F75;
   color: white;
-}
-
-@media (max-width: 1350px) { 
-  .front-kids {
-    height: 275px;
-  } 
-  .front-kids h1 {
-    margin-top: 180px;
-    font-size: 45px;
-    margin-left: 5%;
-    width: 300px;
-  }
-  .content-kids-sec1 {
-    margin-top: 50px;
-    display: inline-flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  .kids-textbox1 { 
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-  .kids-mammoth {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-  .kids-mammoth-textbox { 
-    top: 950px;
-  }
-  .kids-textbox2 {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .kids-textbox3 {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media (max-width: 975px) {
-  .kids-textbox1 { 
-    height: 250px;
-    width: 90%;
-  }
-  .kids-textbox1 p {
-    width: 90%;
-  }
-  .kids-textbox1 a {
-    margin-top: 200px;
-    width: 185px;
-  }
-  .kids-mammoth {
-    margin-left: 0%;
-    margin-right: 0%;
-    height: 400px;
-    width: 100%;
-    border-radius: 0px;
-  }
-  .kids-mammoth::before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.469), rgba(0, 0, 0, 0.887));
-  }
-  .kids-mammoth-textbox { 
-    top: 650px;
-  }
-  .kids-mammoth-textbox p {
-    margin-bottom: 200px;
-  }
-}
-@media (max-width: 750px) {
-  .kids-club {
-    display: inline-flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .kids-club p {
-    margin-right: 10%;
-  }
-  .kids-club img {
-    height: 170px;
-    width: 90%;
-    object-fit: cover;
-  }
-
-  .kids-textbox3 {
-    height: 100%;
-    margin-bottom: 0px;
-  }
-
-  .kids-holiday {
-    display: inline-flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .kids-holiday img {
-    height: 170px;
-    width: 90%;
-  }
-  .kids-holiday-textbox {
-    margin-left: 2.5%;
-    padding-bottom: 15px;
-  }
-  .kids-holiday-textbox a {
-    display: none;
-  }
 }
 
 .front-visit {
@@ -2425,190 +1787,6 @@ nav input:checked ~ .menu {
   margin: 0px;
 }
 
-@media (max-width: 1350px) { 
-  .front-visit {
-    height: 275px;
-  } 
-  .front-visit h1 {
-    margin-top: 120px;
-    font-size: 45px;
-    margin-left: 5%;
-    width: 200px;
-  }
-  .front-visit h1 span {
-    font-size: 55px;
-  }
-  .visit-textbox1 {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .visit-textbox2 {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-  .visit-textbox3 {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-  .visit-textbox4 {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-  .visit-content2 {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-}
-
-@media (max-width: 1150px) {
-  .visit-textbox2 {
-    height: 100%;
-    text-align: center;
-    margin-top: 50px;
-    width: 90%;
-    flex-direction: column;
-  }
-  
-  .visit-textbox2-left {
-    width: 100%;
-  }
-  
-  .visit-textbox2-left h2 {
-    padding-left: 0%;
-    line-height: 0px;
-    font-size: 25px;
-  }
-  
-  .visit-textbox2-left img {
-    display: none;
-  }
-  
-  .visit-textbox2-right {
-    align-items: center;
-    margin-top: 0px;
-    width: 100%;
-  }
-  
-  .visit-textbox2-right span {
-    font-weight: bold;
-  }
-  
-  .visit-textbox2-right iframe {
-    height: 250px;
-    width: 90%;
-    border-radius: 5px;
-    margin-left: 0px;
-    padding-bottom: 15px;
-  }
-  .visit-content2 {
-    overflow-x: scroll;
-  }
-}
-
-@media (max-width: 975px) {
-  .front-visit h1 span {
-    font-size: 55px;
-    display: block;
-  }
-  .visit-textbox1 {
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #F4757E;
-    border-radius: 5px;
-  }
-  .visit-textbox1-text p {
-    padding: 5px;
-    margin-left: 2.5%;
-  }
-  .visit-textbox1 img {
-    display: none;
-  }
-  .visit-textbox1-text .p2, .visit-textbox1-text .p3,  .visit-textbox1-text span {
-    display: none;
-  }
-  .visit-textbox1-text a {
-    display: none;
-  }
-  .visit-textbox3 {
-    display: none;
-  }
-  .visit-textbox3-hours {
-    margin-top: 50px;
-    display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 100%;
-  }
-  .visit-textbox4 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 440px;
-  }
-  .visit-textbox4-left h2 {
-    padding-left: 5%;
-    line-height: 0px;
-    font-size: 30px;
-    padding-top: 4%;
-  }
-  .visit-textbox4-left img {
-    display: none;
-  }
-  .visit-textbox4-left {
-    width: 100%;
-  }
-  .visit-textbox4-left h2 {
-    padding-left: 0%;
-    line-height: 0px;
-    font-size: 30px;
-    padding-top: 4%;
-  }
-  .visit-textbox4-right {
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 85%;
-  }
-  .visit-textbox4-right-buttons {
-    text-align: center;
-    justify-content: center;
-  }
-  .visit-button1 {
-    display: none;
-  }
-  .visit-button2 {
-    border-radius: 99px;
-    border: solid 2px white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    text-decoration: none;
-    color: white;
-  }
-  .visit-content2 {
-    overflow-x: scroll;
-  }
-  .visit-yellowbox {
-    height: 475px;
-  }
-  .visit-yellowbox img {
-    width: 225px;
-    height: 185px;
-    padding-bottom: 15px;
-  }
-  .visit-yellowbox h3 {
-    font-size: 25px;
-  }
-  .visit-yellowbox p {
-    font-size: 18px;
-  }
-}
-
 .front-news {
   position: relative;
   background-image: url(/photos/200kb/newspaper_200.webp);
@@ -2763,48 +1941,6 @@ nav input:checked ~ .menu {
 
 .openinghours-days span, .openinghours-time span {
   text-decoration: line-through;
-}
-
-@media (max-width: 1350px) { 
-  .front-news {
-    height: 275px;
-  } 
-  .front-news h1 {
-    margin-top: 120px;
-    font-size: 65px;
-    margin-left: 5%;
-    width: 250px;
-    line-height: 55px;
-  }
-  .front-news h1 span {
-    font-size: 85px;
-  }
-  .news-content {
-    margin-top: 50px;
-    margin-left: 5%;
-  }
-}
-
-@media (max-width: 1205px) {
-  .news-content {
-    justify-content: center;
-    width: 90%;
-  }
-
-  .news {
-    margin-right: 0px;
-    margin-left: 0px;
-    width: 80%;
-    height: 100%;
-    overflow-y: scroll;
-  }
-  
-  .news img {
-    width: 100%;
-    height: 250px;
-    border-radius: 5px;
-    object-fit: cover;
-  }
 }
 
 .accessibility {
@@ -2971,7 +2107,217 @@ footer {
   border-bottom: 3px solid white;
 }
 
-@media (max-width: 1350px) { 
+@media (max-width: 1500px) {
+  .exhibitions-sec1 {
+    overflow-x: scroll;
+  }
+  .exhibitions {
+    overflow-y: hidden;
+  }
+}
+@media (max-width: 1475px) {
+  .explorations {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+@media (max-width: 1350px) {
+  .front-mainpage, .front-exhibitions, .front-visit, .front-kids, .front-explore, .front-news, .front-biomed, .front-about, .front-contact{
+    height: 275px;
+  } 
+  header .logo {
+    margin-left: 5%;
+  }
+  header nav {
+    margin-right: 3%;
+  }
+  .front-mainpage h1 {
+    margin-left: 5%;
+    margin-top: 95px;
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .content-explore {
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+  .content-exhibitions {
+    margin: 0px;
+  }
+  .content-visit {
+    margin-right: 5%;
+    margin-left: 0px;
+  }
+  .mainpage-biomed-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .mainpage-content-sec2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .mainpage-news {
+    width: 56%;
+  }
+  .mainpage-location {
+    width: 30%;
+  }
+  .bio-text a {
+    right: 19%;
+  }
+  .front-exhibitions {
+    background-position: 50% 35%;
+  }
+  .front-exhibitions h1, .front-explore h1{
+    margin-top: 150px;
+    font-size: 45px;
+    margin-left: 5%;
+    width: 300px;
+  }
+  .exhibitions-sec1 {
+    margin-left: 4%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  .exhibitions {
+    gap: 15px;
+  }
+  .exhibitions-sec2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }  
+  .exhibitions-biology-text p {
+    font-size: 14px;
+    width: 40%;
+  }
+  .front-biomed h1 {
+    margin-top: 150px;
+    font-size: 45px;
+    margin-left: 5%;
+    width: 300px;
+  }
+  .biomed-c1 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .biomed-c2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .biomed-c3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .explore-sec1 h2 {
+    margin-left: 5%;
+  }
+  .explorations {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .explore-sec2 h2 {
+    margin-left: 5%;
+  }
+  .explore-sec2 p {
+    margin-left: 5%;
+  }
+  .explore-exhibitions {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .explore-exhibitions-box {
+    width: 90%;
+  }
+  .front-kids h1 {
+    margin-top: 180px;
+    font-size: 45px;
+    margin-left: 5%;
+    width: 300px;
+  }
+  .content-kids-sec1 {
+    margin-top: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .kids-textbox1 { 
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  .kids-mammoth {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  .kids-mammoth-textbox { 
+    top: 950px;
+  }
+  .kids-textbox2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .kids-textbox3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .front-visit h1 {
+    margin-top: 120px;
+    font-size: 45px;
+    margin-left: 5%;
+    width: 200px;
+  }
+  .front-visit h1 span {
+    font-size: 55px;
+  }
+  .visit-textbox1 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .visit-textbox2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  .visit-textbox3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  .visit-textbox4 {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  .visit-content2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  .accessibility {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .front-news h1 {
+    margin-top: 120px;
+    font-size: 65px;
+    margin-left: 5%;
+    width: 250px;
+    line-height: 55px;
+  }
+  .front-news h1 span {
+    font-size: 85px;
+  }
+  .news-content {
+    margin-top: 50px;
+    margin-left: 5%;
+  }
+  .front-about h1, .front-contact h1 {
+    margin-top: 185px;
+    font-size: 45px;
+  }
   .footer-openinghours {
     padding-left: 5%;
   }
@@ -2979,40 +2325,458 @@ footer {
     padding-right: 15%;
   }
 }
+@media (max-width: 1280px) { 
+  .mainpage-content1 {
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 1205px) {
+  .news-content {
+    justify-content: center;
+    width: 90%;
+  }
+  .news {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .news img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1150px) {
+  .contact-location {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-location-text h2 {
+    font-size: 25px;
+  }
+    .contact-location-text p {
+    font-size: 18px;
+  }
+  .contact-location iframe {
+    align-self: center;
+    max-height: 380px;
+    max-width: 90%;
+    object-fit: cover;
+    padding: 4%;
+    border: none;
+  }
+  .contact-section p {
+    font-size: 18px;
+  }
+  .contact-section h3 {
+    font-size: 24px;
+    padding: 0px;
+    padding-top: 2.5%;
+    margin: 0px;
+  }
+  .contact-section {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contact-emailphone {
+    background-color: #F6A6A6;
+    border-radius: 0px;
+    width: 100%;
+    padding: 2.5%;
+    text-align: center;
+  }
+  .contact-phone {
+    margin-top: 10%;
+  }
+  .contact-socials {
+    background-color: #F6A6A6;
+    border-radius: 0px;
+    width: 100%;
+    padding: 2.5%;
+    text-align: center;
+  }
+  .contact-socials h3 {
+    margin-bottom: 5%;
+  }
+  .contact-openinghours {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #FFE88C;
+    border-radius: 5px;
+    width: 85%;
+    padding: 2.5%;
+  }
+  .visit-textbox2 {
+    height: 100%;
+    text-align: center;
+    margin-top: 50px;
+    width: 90%;
+    flex-direction: column;
+  }
+  
+  .visit-textbox2-left {
+    width: 100%;
+  }
+  
+  .visit-textbox2-left h2 {
+    padding-left: 0%;
+    line-height: 0px;
+    font-size: 25px;
+  }
+  
+  .visit-textbox2-left img {
+    display: none;
+  }
+  
+  .visit-textbox2-right {
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+  }
+  
+  .visit-textbox2-right span {
+    font-weight: bold;
+  }
+  
+  .visit-textbox2-right iframe {
+    height: 250px;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 0px;
+    padding-bottom: 15px;
+  }
+  .visit-content2 {
+    overflow-x: scroll;
+  }
+}
 @media (max-width: 975px) {
+  .hamburger, .hamburger-menu {
+    display: block;
+  }
+  header {
+    padding: 10px 0px;
+    height: 65px;
+  }
+  .menu {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 68px;
+    right: -400px;
+    background-image: url(/photos/background/menubackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 100%;
+    padding-left: 0px;
+  }
+  .menu li {
+    width: 100%;
+  }
+  .menu li a {
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .mainpage-content1 {
+    margin-top: 20px;
+  }
+  .content-visit a:hover, .content-exhibitions a:hover, .content-explore a:hover, .location-text a:hover, .news-text a:hover, .bio-text a:hover {
+    border-bottom: 2px solid transparent;
+  }
+  .content-visit a, .content-exhibitions a, .content-explore a {
+    font-size: 20px;
+  }
+  .mainpage-biomed p {
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 87%;
+    font-size: 13px;
+  }
+  .mainpage-biomed h3 {
+    display: flex;
+    justify-content: center;
+    width: 87%;
+    position: absolute;
+    font-size: 33px;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .bio-text p {
+    margin-top: 55px;
+    width: 83.5%;
+    font-size: 17px;
+  }
+  .bio-text a {
+    display: none;
+  }
+  .mainpage-biomed span a img {
+    width: 100%;
+    border-radius: 5px;
+    height: 500px;
+    object-fit: cover;
+  }
+  .mainpage-content-sec2 {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .mainpage-news {
+    width: 90%;
+  }
+  .mainpage-location {
+    width: 90%;
+    height: 250px;
+  }
+  .location-text a {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+  .about-goal {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 600px;
+  }
+  .goal-text {
+    width: 100%;
+  }
+  .about-goal img {
+    display: none;
+  }
+  .about-goal p {
+    width: 85%;
+  }
+  .about-volunteers {
+    border-radius: 0px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .volunteers-text {
+    margin-left: 5%;
+  }
+  .volunteers-text p {
+    font-size: 17px
+  }
+  .about-support {
+    margin-left: 0px;
+  }
+  .support-text {
+    margin-left: 5%;
+  }
+  .support-text p{
+    font-size: 17px;
+  }
+  .about-intern {
+    border-radius: 0px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .intern-text {
+    margin-left: 5%;
+  }
+  .intern-text p{
+    font-size: 17px;
+  }
+  .exhibitions-sec1 {
+    margin-top: 20px;
+  }
+  .exhibitions-box a img {
+    width: 250px;
+    height: 400px;
+  }
+  .exhibitions-sec2 h2 {
+    display: none;
+  }
+  .exhibitions-sec2 {
+    margin-top: 50px;
+  }
+  .exhibitions-biology span a img {
+    display: none;
+  }
+  .exhibition-biology-box img {
+    display: none;
+  }
+  .exhibitions-biology {
+    display: block;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.900)), url(/photos/200kb/samuel-zeller-113381_200.webp);
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .exhibition-biology-box {
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .exhibitions-biology-text span {
+    display: block;
+    width: 80%;
+    color: white;
+  }
+  .exhibitions-biology-text h3{
+    margin-top: 40px;
+    width: 80%;
+    color: white;
+  }
+  .exhibitions-biology-text {
+    margin-left: 0px;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .exhibitions-biology-text p {
+    margin-top: 370px;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+  }
+  .exhibitions-biology-text-button {
+    display: block;
+    margin-top: 475px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20%;
+  }
+  .biomed-c1 {
+    border-radius: 5px;
+    height: 400px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.900)), url(/photos/200kb/samuel-zeller-113381_200.webp);
+    background-position: center;
+    background-size: cover;
+  }
+  .biomed-c1 span {
+    display: flex;
+  }
+  .biomed-c1 p {
+    position: absolute;
+    margin-top: 285px;
+    width: 85%;
+  }
+  .biomed-c1 img {
+    opacity: 0;
+  }
+  .biomed-c2 img{
+    display: none;
+  }
+  .biomed-textbox {
+    margin-top: 15%;
+  }
+  .biomed-c3 {
+    border-radius: 5px;
+    height: 400px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.900)), url(/photos/200kb/genoa-956405_1920_200.webp);
+    background-position: center;
+    background-size: cover;
+  }
+  .biomed-c3 span {
+    display: flex;
+  }
+  .biomed-c3 p {
+    position: absolute;
+    margin-top: 285px;
+    width: 85%;
+  }
+  .biomed-c3 img {
+    opacity: 0;
+  }
+  .explore-sec1 h2 {
+    font-size: 25px;
+  }
+  .front-explore {
+    margin-top: 40px;
+    height: 235px;
+    background-position: 50% 10%;
+  } 
+  .front-explore h1 {
+    margin-top: 110px;
+  }
+  .explore-box-text {
+    left: 50%;
+  }
+  .explore-box a img {
+    width: 275px;
+    height: 450px;
+  }
+  .explore-sec2 {
+    margin-top: 50px;
+  }
+  .explore-sec2 h2 {
+    font-size: 25px;
+  }
+  .explore-sec2 p {
+    font-size: 17px;
+  }
+  .explore-sec2 span {
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .explore-exhibitions-box {
+    height: 475px;
+    width: 90%;
+    text-align: center;
+  }
+  .explore-exhibitions-box p {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    font-size: 24px;
+  }
+  .explore-exhibitions {
+    margin-bottom: 500px;
+  }
+  .kids-textbox1 { 
+    height: 250px;
+    width: 90%;
+  }
+  .kids-textbox1 p {
+    width: 90%;
+  }
+  .kids-textbox1 a {
+    margin-top: 200px;
+    width: 185px;
+  }
+  .kids-mammoth {
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 400px;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .kids-mammoth::before {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.469), rgba(0, 0, 0, 0.887));
+  }
+  .kids-mammoth-textbox { 
+    top: 650px;
+  }
+  .kids-mammoth-textbox p {
+    margin-bottom: 200px;
+  }
   .footer-openinghours {
     padding-left: 5%;
   }
   .contactus {
     padding-right: 10%;
   }
-}
-@media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .aboutus ol {
-    display: none;
-  }
-
-  .contactus ol {
-    display: none;
-  }
-
-  .contactus {
-    padding-right: 0%;
-    padding-bottom: 50px;
-  }
-}
-@media (max-width: 1350px) {
-  .accessibility {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media (max-width: 975px) {
   .accessibility {
     display: inline-flex;
     flex-direction: column;
@@ -3043,5 +2807,160 @@ footer {
   }
   .news-openinghours {
     height: 450px;
+  }
+  .front-visit h1 span {
+    font-size: 55px;
+    display: block;
+  }
+  .visit-textbox1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #F4757E;
+    border-radius: 5px;
+  }
+  .visit-textbox1-text p {
+    padding: 5px;
+    margin-left: 2.5%;
+  }
+  .visit-textbox1 img {
+    display: none;
+  }
+  .visit-textbox1-text .p2, .visit-textbox1-text .p3,  .visit-textbox1-text span {
+    display: none;
+  }
+  .visit-textbox1-text a {
+    display: none;
+  }
+  .visit-textbox3 {
+    display: none;
+  }
+  .visit-textbox3-hours {
+    margin-top: 50px;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+  }
+  .visit-textbox4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 440px;
+  }
+  .visit-textbox4-left h2 {
+    padding-left: 5%;
+    line-height: 0px;
+    font-size: 30px;
+    padding-top: 4%;
+  }
+  .visit-textbox4-left img {
+    display: none;
+  }
+  .visit-textbox4-left {
+    width: 100%;
+  }
+  .visit-textbox4-left h2 {
+    padding-left: 0%;
+    line-height: 0px;
+    font-size: 30px;
+    padding-top: 4%;
+  }
+  .visit-textbox4-right {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
+  }
+  .visit-textbox4-right-buttons {
+    text-align: center;
+    justify-content: center;
+  }
+  .visit-button1 {
+    display: none;
+  }
+  .visit-button2 {
+    border-radius: 99px;
+    border: solid 2px white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .visit-content2 {
+    overflow-x: scroll;
+  }
+  .visit-yellowbox {
+    height: 475px;
+  }
+  .visit-yellowbox img {
+    width: 225px;
+    height: 185px;
+    padding-bottom: 15px;
+  }
+  .visit-yellowbox h3 {
+    font-size: 25px;
+  }
+  .visit-yellowbox p {
+    font-size: 18px;
+  }
+  .front-about h1, .front-contact h1 {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 750px) {
+  .kids-club {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .kids-club p {
+    margin-right: 10%;
+  }
+  .kids-club img {
+    height: 170px;
+    width: 90%;
+    object-fit: cover;
+  }
+
+  .kids-textbox3 {
+    height: 100%;
+    margin-bottom: 0px;
+  }
+
+  .kids-holiday {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .kids-holiday img {
+    height: 170px;
+    width: 90%;
+  }
+  .kids-holiday-textbox {
+    margin-left: 2.5%;
+    padding-bottom: 15px;
+  }
+  .kids-holiday-textbox a {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutus ol {
+    display: none;
+  }
+
+  .contactus ol {
+    display: none;
+  }
+
+  .contactus {
+    padding-right: 0%;
+    padding-bottom: 50px;
   }
 }
