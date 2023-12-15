@@ -349,6 +349,11 @@ nav input:checked ~ .menu {
   border-bottom: 2px solid black;
 }
 
+.mainpage-content1 h2 {
+  left: 5000px;
+  position: absolute;
+}
+
 .mainpage-content2 {
   width: 100%;
   margin-bottom: 69px;
