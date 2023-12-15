@@ -234,7 +234,6 @@ nav input:checked ~ .menu {
   }
 }
 
-
 .front-mainpage {
   position: relative;
   background-image: url(/photos/200kb/museum-desktop_200.webp);
@@ -638,7 +637,7 @@ nav input:checked ~ .menu {
   }
 }
 
-.front-about {
+.front-about,.front-contact {
   position: relative;
   background-image: url(/photos/200kb/museum-desktop_200.webp);
   display: block;
@@ -648,7 +647,7 @@ nav input:checked ~ .menu {
   background-position: center;
 } 
 
-.front-about h1 {
+.front-about h1, .front-contact h1 {
   position: absolute;
   color: white;
   font-size: 65px;
@@ -656,13 +655,7 @@ nav input:checked ~ .menu {
   margin-top: 220px;
 }
 
-.front-image img {
-  opacity: 0%;
-  height: 0px;
-  width: 0px;
-}
-
-.front-about::after {
+.front-about::after, .front-contact::after  {
   content: "";
   display: block;
   top: 0;
@@ -827,10 +820,10 @@ nav input:checked ~ .menu {
 }
 
 @media (max-width: 975px) {
-  .front-about {
+  .front-about,.front-contact {
     height: 275px;
   } 
-  .front-about h1 {
+  .front-about h1, .front-contact h1 {
     margin-top: 185px;
     font-size: 45px;
     margin-left: 5%;
@@ -880,34 +873,6 @@ nav input:checked ~ .menu {
   .intern-text p{
     font-size: 17px;
   }
-}
-
-.front-contact {
-  position: relative;
-  background-image: url(/photos/200kb/museum-desktop_200.webp);
-  display: block;
-  height: 440px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-} 
-
-.front-contact h1 {
-  position: absolute;
-  color: white;
-  font-size: 65px;
-  margin-left: 10%;
-  margin-top: 220px;
-}
-
-.front-contact::after {
-  content: "";
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
 }
 
 .contact-location {
@@ -1032,14 +997,6 @@ nav input:checked ~ .menu {
 }
 
 @media (max-width: 1145px) {
-  .front-contact {
-    height: 275px;
-  } 
-  .front-contact h1 {
-    margin-top: 185px;
-    font-size: 45px;
-    margin-left: 5%;
-  }
   .contact-location {
     margin-left: 5%;
     margin-right: 5%;
@@ -1120,7 +1077,7 @@ nav input:checked ~ .menu {
   background-position: 50% 100%;
 } 
 
-.front-exhibitions h1 {
+.front-exhibitions h1, .front-explore h1  {
   position: absolute;
   color: white;
   font-size: 85px;
@@ -1129,7 +1086,7 @@ nav input:checked ~ .menu {
   margin-top: 220px;
 }
 
-.front-exhibitions::after {
+.front-exhibitions::after, .front-explore::after {
   content: "";
   display: block;
   top: 0;
@@ -1194,10 +1151,10 @@ nav input:checked ~ .menu {
   transition: transform .2s;
 }
 
-.exhibitions-box a img:hover {
+.exhibitions-box a img:hover, .explore-box a img:hover {
   transform: scale(1.2);
 }
-.exhibitions-box-text:hover {
+.exhibitions-box-text:hover, .explore-box-text:hover {
   display: none;
 }
 
@@ -1293,8 +1250,8 @@ nav input:checked ~ .menu {
     height: 275px;
     background-position: 50% 35%;
   } 
-  .front-exhibitions h1 {
-    margin-top: 140px;
+  .front-exhibitions h1, .front-explore h1{
+    margin-top: 150px;
     font-size: 45px;
     margin-left: 5%;
     width: 300px;
@@ -1382,56 +1339,6 @@ nav input:checked ~ .menu {
     font-weight: bold;
     margin-right: 20%;
   }
-}
-
-.accessibility {
-  margin-top: 50px;
-  background-color: #91C0EC;
-  border-radius: 5px;
-  margin-left: 10%;
-  margin-right: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.accessibility-text {
-  padding: 2%;
-}
-
-.accessibility-text h3 {
-  font-size: 28px;
-  margin-left: 5%;
-}
-
-.accessibility-text p {
-  font-size: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 100%;
-}
-
-.accessibility a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  border: 2px solid white;
-  border-radius: 99px;
-  margin-top: 110px;
-  margin-bottom: 110px;
-  margin-right: 5%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
-  font-size: 25px;
-  min-width: 90px;
-}
-
-.accessibility a:hover {
-  background-color: white;
-  color: #91C0EC;
 }
 
 .front-biomed {
@@ -1637,24 +1544,6 @@ nav input:checked ~ .menu {
   background-size: cover;
 } 
 
-.front-explore h1 {
-  position: absolute;
-  color: white;
-  font-size: 75px;
-  margin-left: 10%;
-  margin-top: 225px;
-}
-
-.front-explore::after {
-  content: "";
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
-}
-
 .explore-sec1 {
   margin-top: 50px;
   width: 86%;
@@ -1715,13 +1604,6 @@ nav input:checked ~ .menu {
   object-fit: cover;
   border-radius: 5px;
   transition: transform .2s;
-}
-
-.explore-box a img:hover {
-  transform: scale(1.15);
-}
-.explore-box-text:hover {
-  display: none;
 }
 
 .explore-sec2 {
@@ -1807,12 +1689,6 @@ nav input:checked ~ .menu {
   .front-explore {
     height: 275px;
   } 
-  .front-explore h1 {
-    margin-top: 180px;
-    font-size: 45px;
-    margin-left: 5%;
-    width: 300px;
-  }
   .explore-sec1 h2 {
     margin-left: 5%;
   }
@@ -1841,12 +1717,8 @@ nav input:checked ~ .menu {
     font-size: 25px;
   }
   .front-explore {
-    position: relative;
-    margin-top: 50px;
-    background-image: url(/photos/200kb/plato_200.webp);
-    display: block;
-    width: 100%;
-    background-size: cover;
+    margin-top: 40px;
+    height: 235px;
     background-position: 50% 10%;
   } 
   .explore-box-text {
@@ -2928,6 +2800,56 @@ nav input:checked ~ .menu {
     border-radius: 5px;
     object-fit: cover;
   }
+}
+
+.accessibility {
+  margin-top: 50px;
+  background-color: #91C0EC;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accessibility-text {
+  padding: 2%;
+}
+
+.accessibility-text h3 {
+  font-size: 28px;
+  margin-left: 5%;
+}
+
+.accessibility-text p {
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
+}
+
+.accessibility a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 99px;
+  margin-top: 110px;
+  margin-bottom: 110px;
+  margin-right: 5%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  font-size: 25px;
+  min-width: 90px;
+}
+
+.accessibility a:hover {
+  background-color: white;
+  color: #91C0EC;
 }
 
 footer {
