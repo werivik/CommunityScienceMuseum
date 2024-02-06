@@ -364,7 +364,7 @@ nav input:checked ~ .menu {
 .bio-text {
   width: 100%;
   position: absolute;
-  margin-top: 240px;
+  margin-top: 265px;
   margin-left: 5%;
   display: inline-flex;
 }
@@ -931,6 +931,7 @@ nav input:checked ~ .menu {
   position: absolute;
   margin-left: 48%;
   width: 100%;
+  margin-top: 15px;
 }
 
 .exhibitions-biology-text h3 {
@@ -1128,8 +1129,7 @@ nav input:checked ~ .menu {
   position: absolute;
   color: white;
   top: 85%;
-  left: 50%;
-  right: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 
@@ -1518,7 +1518,7 @@ nav input:checked ~ .menu {
 }
 
 .visit-textbox2 {
-  margin-top: 75px;
+  margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
@@ -1541,7 +1541,7 @@ nav input:checked ~ .menu {
 }
 
 .visit-textbox2-left img {
-  margin-top: 30px;
+  margin-top: 10px;
   height: 375px;
   width: 90%;
   object-fit: cover;
