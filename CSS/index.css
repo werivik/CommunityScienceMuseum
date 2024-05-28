@@ -296,98 +296,127 @@ p {
   }
 }
 
-  .mainpage-content-sec2 {
-    display: inline-flex;
+.mainpage-content-sec2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 490px;
+}
+
+.mainpage-news {
+  height: 100%;
+  width: 55%;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+
+  img {
+    opacity: 100%;
+    height: 100%;
     width: 100%;
-    margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-    gap: 50px;
-  }
-  
-  .mainpage-news {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(/photos/200kb/scientific-2040795_1280_200.webp);
-    height: 490px;
-    width: 50%;
     border-radius: 5px;
     object-fit: cover;
-    background-position: center;
-    background-size: cover;
   }
-  
-  .mainpage-news img {
-    opacity: 0%;
-    height: 0px;
-    width: 0px;
+}
+
+.news-textbox {
+  color: white;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.396);
+
+  h3 {
+    font-size: 45px;
   }
-  
+
   .news-text {
-    color: white;
-    margin-left: 5%;
-  }
-  
-  .news-text h3 {
-    color: white;
-    font-size: 33px;
-  }
-  
-  .news-text p {
     width: 100%;
-    font-size: 20px;
-    color: white;
-    font-style: italic;
-  }
-  
-  .news-text a {
-    margin-top: 150px;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+    margin-left: 4%;
     position: absolute;
-    font-family: 'Roboto Slab', serif;
+    
+    p {
+      font-size: 20px;
+      font-style: italic;
+    }
   }
+
+  .news-link {
+    position: absolute;
+    margin-bottom: 25px;
+    margin-left: 4%;
+    margin-top: 425px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
   
-  .mainpage-location {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0)), url(/photos/200kb/exhibition-1863344_1920_200.webp);
-    height: 490px;
-    width: 27%;
+
+
+
+.mainpage-location {
+  height: 100%;
+  width: 42%;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+
+  img {
+    opacity: 100%;
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
     object-fit: cover;
-    background-position: center;
-    background-size: cover;
-    display: flex;
   }
-  
-  .mainpage-location img {
-    opacity: 0%;
-    height: 0px;
-    width: 0px;
+}
+
+.location-textbox {
+  color: black;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.55);
+
+  h3 {
+    font-size: 45px;
+    width: 50%;
   }
-  
+
   .location-text {
-    margin-left: 5%;
-  }
-  
-  .location-text h3 {
-    color: black;
-    font-size: 33px;
-    width: 200px;
-    font-family: 'Teko', sans-serif;
-  }
-  
-  .location-text a {
-    font-family: 'Roboto Slab', serif;
-    margin-top: 260px;
-    font-size: 20px;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
+    width: 100%;
+    margin-left: 4%;
     position: absolute;
+    
+    p {
+      font-size: 20px;
+      font-style: italic;
+    }
   }
-  
-  .news-text a:hover {
-    border-bottom: 2px solid white;
-    transition: 0.25s;
+
+  .location-link {
+    position: absolute;
+    margin-bottom: 25px;
+    margin-left: 4%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
   }
-  
+}
+
