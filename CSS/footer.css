@@ -17,23 +17,27 @@ footer {
   }
   
   .footer-container h3 {
-    font-size: 25px;
+    font-size: clamp(18px, calc(1vw + 0.7vh), 30px);          
     line-height: 0px;
     padding-top: 20px;
     padding-bottom: 10px;
   }
   
   .footer-container p {
-    font-size: 18px;
+    font-size: clamp(15px, calc(1vw + 0.7vh), 20px);          
   }
   
   .footer-container a {
-    font-size: 18px;
+    font-size: clamp(15px, calc(1vw + 0.7vh), 20px);          
   }
   
   .footer-openinghours {
     color: white;
     padding-left: 10%;
+
+    h3 {
+      font-size: clamp(22px, calc(2vw + 0.9vh), 35px);          
+    }
   }
   
   .footer-openinghours span {
@@ -42,6 +46,7 @@ footer {
   }
   
   .days-time {
+    font-size: clamp(15px, calc(1vw + 0.7vh), 20px);          
     display: flex;
     padding-bottom: 20px;
   }

@@ -39,3 +39,371 @@ p {
   ::-webkit-scrollbar-thumb:hover {
     background: #092A56;
   }
+
+  .body-pink {
+    background-image: url(/photos/background/background-pink.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+.front-visit {
+  position: relative;
+  background-image: url(/photos/200kb/museum-desktop_200.webp);
+  display: block;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+} 
+
+.front-visit h1 {
+  position: absolute;
+  color: white;
+  font-size: 65px;
+  margin-left: 10%;
+  margin-top: 150px;
+  width: 300px;
+}
+
+.front-image img {
+  opacity: 0%;
+  height: 0px;
+  width: 0px;
+}
+
+.front-visit h1 span {
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+.front-visit::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+}
+
+.visit-textbox1 {
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.visit-textbox1 img {
+  height: 500px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.visit-textbox1-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-right: 5%;
+}
+
+.visit-textbox1-text span {
+  font-weight: bold;
+}
+
+.visit-textbox1-text a {
+  text-decoration: none;
+  display: flex;
+  margin-top: 90px;
+  color: black;
+  font-weight: bolder;
+  width: 220px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.visit-textbox1 img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: right;
+}
+
+.visit-textbox1-text a:hover {
+  border-bottom: 2px solid black;
+}
+
+.visit-textbox2 {
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  background-color: #B5D9FB;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 500px;
+  align-items: center;
+}
+
+.visit-textbox2-left {
+  width: 45%;
+}
+
+.visit-textbox2-left h2 {
+  padding-left: 5%;
+  line-height: 0px;
+  font-size: 30px;
+  padding-top: 4%;
+}
+
+.visit-textbox2-left img {
+  margin-top: 10px;
+  height: 375px;
+  width: 90%;
+  object-fit: cover;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.visit-textbox2-right {
+  align-items: center;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 25%;
+  margin-left: 0px;
+}
+
+.visit-textbox2-right span {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.visit-textbox2-right iframe {
+  height: 250px;
+  width: 475px;
+  border-radius: 5px;
+  margin-left: 250px;
+}
+
+.visit-textbox3-hours {
+  display: none;
+}
+
+.visit-textbox3 {
+  margin-top: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  background-color: #F6A6A6;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 425px;
+}
+
+.visit-textbox3 p {
+  font-size: 17px;
+}
+
+.visit-textbox3-left {
+  width: 50%;
+}
+
+.visit-textbox3-left h2 {
+  padding-left: 5%;
+  line-height: 0px;
+  font-size: 30px;
+  padding-top: 4%;
+}
+
+.visit-textbox3-left img {
+  height: 300px;
+  min-height: 300px;
+  width: 90%;
+  object-fit: cover;
+  padding: 30px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.visit-textbox3-middle {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  width: 26%;
+}
+
+.visit-textbox3-time {
+  margin-left: 5%;
+  min-width: 125px;
+}
+
+.visit-textbox3-days {
+  font-weight: bold;
+}
+
+.visit-textbox3-time span {
+  opacity: 60%;
+  text-decoration: line-through;
+}
+
+.visit-textbox3-days span {
+  opacity: 60%;
+  text-decoration: line-through;
+}
+
+.visit-textbox3-right {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  width: 25%;
+  margin-left: 2.5%;
+}
+
+.visit-textbox3-right-days {
+  font-weight: bold;
+}
+
+.visit-textbox3-right-time {
+  margin-left: 5%;
+  min-width: 125px;
+}
+
+.visit-textbox4 {
+  margin-top: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  background-color: #B5D9FB;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 500px;
+  align-items: center;
+}
+
+.visit-textbox4-left {
+  width: 45%;
+}
+
+.visit-textbox4-left h2 {
+  padding-left: 5%;
+  line-height: 0px;
+  font-size: 30px;
+  padding-top: 4%;
+}
+
+.visit-textbox4-left img {
+  height: 375px;
+  width: 90%;
+  object-fit: cover;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.visit-textbox4-right {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  width: 46%;
+}
+
+.visit-textbox4-right p span {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.visit-textbox4-right span {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.visit-textbox4-right-buttons {
+  display: inline-flex;
+  gap: 25px;
+  height: 25px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.visit-button1 {
+  font-size: 25px;
+  padding: 1%;
+  background-color: #092A56;
+  border-radius: 99px;
+  border: solid 2px #092A56;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #B5D9FB;
+}
+
+.visit-button2 {
+  border-radius: 99px;
+  border: solid 2px #092A56;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #092A56;
+}
+
+.visit-button1:hover {
+  color: #092A56;
+  background-color: transparent;
+}
+
+.visit-button2:hover {
+  background-color: #092A56;
+  color: #B5D9FB;
+}
+
+.visit-content2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 75px;
+  display: inline-flex;
+  width: 80%;
+ justify-content: space-between;
+ gap: 10px;
+}
+
+.visit-yellowbox {
+  background-color: #FCDD62;
+  border-radius: 5px;
+  width: 350px;
+  height: 550px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.visit-yellowbox img {
+  width: 300px;
+  height: 205px;
+  border-radius: 5%;
+  object-fit: cover;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visit-yellowbox h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.visit-yellowbox p {
+  padding: 4%;
+  font-size: 15px;
+  margin: 0px;
+}
