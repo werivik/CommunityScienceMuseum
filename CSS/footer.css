@@ -1,0 +1,152 @@
+
+footer {
+    background-color: #C74C55;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 125px;
+  }
+  
+  .footer-container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  .footer-container h3 {
+    font-size: 25px;
+    line-height: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .footer-container p {
+    font-size: 18px;
+  }
+  
+  .footer-container a {
+    font-size: 18px;
+  }
+  
+  .footer-openinghours {
+    color: white;
+    padding-left: 10%;
+  }
+  
+  .footer-openinghours span {
+    opacity: 60%;
+    text-decoration: line-through;
+  }
+  
+  .days-time {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  
+  .days {
+    line-height: 10px;
+  }
+  
+  .time {
+    line-height: 10px;
+    margin-left: 10px;
+  }
+  
+  .aboutus {
+    list-style: none;
+  }
+  
+  .aboutus a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .aboutus ol {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .aboutus ol li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 43px;
+  }
+  
+  .aboutus ol li a {
+    line-height: 10px;
+  }
+  
+  .contactus {
+    padding-right: 17%;
+    list-style: none;
+  }
+  
+  .contactus a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contactus ol {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .contactus li {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 43px;
+  }
+  
+  .contactus li a {
+    line-height: 10px;
+  }
+  
+  .aboutus ol li a:hover, .contactus ol li a:hover {
+    font-weight: bold;
+    transition: 0.2s;
+    transform: scale(1.1);
+  }
+  
+  .aboutus h3:hover, .contactus h3:hover {
+    border-bottom: 3px solid white;
+    transition: 0.3s;
+    margin-bottom: -3px;
+  }
+
+  @media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .aboutus ol {
+        display: none;
+      }
+    
+      .contactus ol {
+        display: none;
+      }
+    
+      .contactus {
+        padding-right: 0%;
+        padding-bottom: 50px;
+      }
+  }
+
+  @media (max-width: 1350px) {
+    .footer-openinghours {
+        padding-left: 5%;
+      }
+      .contactus {
+        padding-right: 15%;
+      }
+  }
+
+  @media (max-width: 975px) {
+    .footer-openinghours {
+        padding-left: 5%;
+      }
+  }

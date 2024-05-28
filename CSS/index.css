@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@100;200;300;400;500;900&display=swap');
+
+p {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  h1 {
+    font-family: 'Teko', sans-serif;
+  }
+  
+  h2 {
+    font-family: 'Teko', sans-serif;
+  }
+  
+  h3 {
+    font-family: 'Teko', sans-serif;
+  }
+  
+  html {
+    width: 100%;
+  }
+
+
+  .body-pink {
+    background-image: url(/photos/background/background-pink.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  
+.front-mainpage {
+    position: relative;
+    background-image: url(/photos/200kb/museum-desktop_200.webp);
+    display: block;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  } 
+  
+  .front-mainpage h1 {
+    font-weight: 400;
+    position: absolute;
+    color: white;
+    font-size: 95px;
+    width: 50px;
+    margin-left: 10%;
+    margin-top: 150px;
+    line-height: 95px;
+  }
+  
+  .front-mainpage h1 span {
+    font-weight: 800;
+  }
+  
+  .front-image img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+  }
+  
+  .front-mainpage::after {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.661));
+  }
+  
+  .mainpage-content1 {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 445px;
+    margin-top: 69px;
+    gap: 15px;
+  }
+  
+  .content-explore {
+    background-color: #FFE88C;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10px;
+    width: 1500px;
+    min-width: 275px;
+  }
+  
+  .content-exhibitions {
+    background-color: #B5D9FB;
+    border-radius: 5px;
+    height: 100%;
+    width: 1500px;
+    min-width: 275px;
+    margin-right: 10px;
+  }
+  
+  .content-visit {
+    background-color: #F4757E;
+    border-radius: 5px;
+    width: 1500px;
+    min-width: 275px;
+    margin-right: 10%;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  
+  .content-visit img, .content-exhibitions img, .content-explore img  {
+    padding-top: 25px;
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 87%;
+    height: 47%;
+    object-fit: cover;
+  }
+  
+  .content-visit-text, .content-exhibitions-text, .content-explore-text {
+    height: 125px;
+  }
+  
+  .content-visit-text p, .content-exhibitions-text p, .content-explore-text p {
+    margin-left: 25px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .content-visit span {
+    font-weight: bold;
+  }
+  
+  .content-visit a, .content-exhibitions a, .content-explore a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    font-family: 'Teko', sans-serif;
+  }
+  
+  .content-visit a:hover, .content-exhibitions a:hover, .content-explore a:hover {
+    border-bottom: 2px solid black;
+  }
+  
+  .mainpage-content1 h2 {
+    left: 5000px;
+    position: absolute;
+  }
+  
+  .mainpage-content2 {
+    width: 100%;
+    margin-bottom: 69px;
+    margin-top: 69px;
+  }
+  
+  .mainpage-biomed-content {
+  
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .mainpage-biomed {
+    display: flex;
+  }
+  
+  .mainpage-biomed span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .mainpage-biomed span a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .mainpage-biomed span a img {
+    width: 100%;
+    border-radius: 5px;
+    max-height: 409px;
+    min-height: 350px;
+    object-fit: cover;
+  }
+  
+  .mainpage-biomed h3 {
+    font-family: 'Teko', sans-serif;
+    position: absolute;
+    margin-left: 5%;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  
+  .mainpage-biomed p {
+    display: none;
+  }
+  
+  .bio-text {
+    width: 100%;
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 5%;
+    display: inline-flex;
+  }
+  
+  .bio-text p {
+    display: block;
+    width: 58%;
+    font-size: 17px;
+  }
+  
+  .bio-text a {
+    bottom: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    right: 28%;
+    position: absolute;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .mainpage-content-sec2 {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 50px;
+  }
+  
+  .mainpage-news {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(/photos/200kb/scientific-2040795_1280_200.webp);
+    height: 490px;
+    width: 50%;
+    border-radius: 5px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .mainpage-news img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+  }
+  
+  .news-text {
+    color: white;
+    margin-left: 5%;
+  }
+  
+  .news-text h3 {
+    color: white;
+    font-size: 33px;
+  }
+  
+  .news-text p {
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+  }
+  
+  .news-text a {
+    margin-top: 150px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .mainpage-location {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0)), url(/photos/200kb/exhibition-1863344_1920_200.webp);
+    height: 490px;
+    width: 27%;
+    border-radius: 5px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+  }
+  
+  .mainpage-location img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+  }
+  
+  .location-text {
+    margin-left: 5%;
+  }
+  
+  .location-text h3 {
+    color: black;
+    font-size: 33px;
+    width: 200px;
+    font-family: 'Teko', sans-serif;
+  }
+  
+  .location-text a {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 260px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+  }
+  
+  .news-text a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  .location-text a:hover, .bio-text a:hover {
+    border-bottom: 2px solid black;
+  }

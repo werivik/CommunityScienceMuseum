@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@100;200;300;400;500;900&display=swap');
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif;
+}
+
+h2 {
+  font-family: 'Teko', sans-serif;
+}
+
+h3 {
+  font-family: 'Teko', sans-serif;
+}
+
+html {
+  width: 100%;
+}
+
+.body-blue {
+    background-image: url(/photos/background/background-blue.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.front-biomed {
+    position: relative;
+    background-image: url(/photos/200kb/lab-512503_1920_200.webp);
+    display: block;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }  
+  
+  .front-biomed h1 {
+    position: absolute;
+    color: white;
+    width: 400px;
+    margin-top: 300px;
+    margin-left: 10%;
+    font-size: 65px;
+  }
+
+  .front-image img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+  }
+  
+  .front-biomed::after {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+  }
+  
+  .biomed-content {
+    margin-top: 50px;
+  }
+  
+  .biomed-c1 {
+    border-radius: 5px;
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #F4757E;
+  }
+  
+  .biomed-c1 div {
+    display: inline-flex;
+  }
+  
+  .biomed-c1 p {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5%;
+    padding-right: 5%;
+    color: white;
+    font-size: 17px;
+  }
+  
+  .biomed-c1 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .biomed-c2 {
+    margin-top: 75px;
+    border-radius: 5px;
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #244979;
+  }
+  
+  .biomed-c2 div {
+    display: inline-flex;
+  }
+  
+  .biomed-textbox { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.5%;
+    padding-right: 5%;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .biomed-c2 img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .biomed-c3 {
+    margin-top: 75px;
+    border-radius: 5px;
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #F4757E;
+  }
+  
+  .biomed-c3 div {
+    display: inline-flex;
+  }
+  
+  .biomed-c3 p {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5%;
+    padding-right: 5%;
+    color: white;
+    font-size: 17px;
+  }
+  
+  .biomed-c3 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+  }

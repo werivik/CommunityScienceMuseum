@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@100;200;300;400;500;900&display=swap');
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif;
+}
+
+h2 {
+  font-family: 'Teko', sans-serif;
+}
+
+h3 {
+  font-family: 'Teko', sans-serif;
+}
+
+html {
+  width: 100%;
+}
+
+.body-yellow {
+    background-image: url(/photos/background/background-yellow.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  
+.front-kids {
+    position: relative;
+    background-image: url(/photos/200kb/kidssitting_1_200.webp);
+    display: block;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 25%;
+  }  
+  
+  .front-kids h1 {
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    margin-left: 10%;
+    margin-top: 325px;
+    width: 400px;
+  }
+
+  .front-image img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+  }
+  
+  .front-kids::after {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
+  }
+  
+  .content-kids-sec1 h2 {
+    position: absolute;
+    left: 50000px;
+  }
+  
+  .kids-textbox1 { 
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    background-color: #F4757E;
+    color: white;
+    min-height: 170px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .kids-textbox1 p {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-size: 17px;
+    padding-top: 15px;
+  }
+  
+  .kids-textbox1 a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    margin-left: 2.5%;
+    font-weight: bold;
+    font-size: 18px;
+    width: 20%;
+    margin-top: 130px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .kids-textbox1 a:hover {
+    border-bottom: 2px solid white; 
+  }
+  
+  .content-kids-sec1 {
+    margin-top: 75px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 75px;
+  }
+  
+  .kids-mammoth {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(/photos/200kb/mammoth-1257288_1920_200.webp);
+    height: 600px;
+    width: 80%;
+    border-radius: 5px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .kids-mammoth::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.808));
+    border-radius: 5px;
+  }
+  
+  .kids-mammoth img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+  }
+  
+  .kids-mammoth-textbox { 
+    position: absolute;
+    top: 1200px;
+    color: white;
+    font-size: 17px;
+    margin-left: 2.5%;
+    width: 400px;
+  }
+  
+  .kids-mammoth-textbox span {
+    font-weight: bolder;
+  }
+  
+  .kids-textbox2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #F4757E;
+    color: white;
+    height: 325px;
+    border-radius: 5px;
+  }
+  
+  .kids-club { 
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .kids-club img {
+    height: 300px;
+    padding: 2.5%;
+  }
+  
+  .kids-club p {
+    font-size: 17px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .kids-club span {
+    font-weight: bold;
+  }
+  
+  .kids-textbox3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #FCDD62;
+    height: 325px;
+    border-radius: 5px;
+    margin-bottom: 75px;
+  }
+  
+  .kids-holiday { 
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .kids-holiday img {
+    height: 300px;
+    width: 400px;
+    padding: 2.5%;
+    object-fit: cover;
+  }
+  
+  .kids-holiday-textbox {
+    color: black;
+    height: 90%;
+  }
+  
+  .kids-holiday p {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    margin-left: 1.5%;
+    margin-right: 2.5%;
+  }
+  
+  .kids-holiday span {
+    margin-left: 1.5%;
+    padding-right: 5%;
+  }
+  
+  .kids-holiday-textbox a {
+    text-decoration: none;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #002F75;
+    color: #002F75;
+    border-radius: 99px;
+    width: 80px;
+    font-weight: bolder;
+  }
+  
+  .kids-holiday-textbox a:hover {
+    background-color: #002F75;
+    color: white;
+  }
