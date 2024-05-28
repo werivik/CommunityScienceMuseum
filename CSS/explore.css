@@ -2,24 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@100;200;300;400;500;900&display=swap');
 
 p {
-  font-family: 'Roboto Slab', serif;
-}
+    font-family: 'Roboto Slab', serif;
+  }
 
-h1 {
-  font-family: 'Teko', sans-serif;
-}
-
-h2 {
-  font-family: 'Teko', sans-serif;
-}
-
-h3 {
-  font-family: 'Teko', sans-serif;
-}
-
-html {
-  width: 100%;
-}
+  h1 {
+    font-family: 'Teko', sans-serif;
+  }
+  
+  h2 {
+    font-family: 'Teko', sans-serif;
+  }
+  
+  h3 {
+    font-family: 'Teko', sans-serif;
+  }
+  
+  html {
+    width: 100%;
+  } 
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #FFEDED; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #092a5694;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #092A56;
+  }
 
 .body-yellow {
     background-image: url(/photos/background/background-yellow.png);

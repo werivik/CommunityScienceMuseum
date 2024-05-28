@@ -19,7 +19,26 @@ p {
   
   html {
     width: 100%;
-  }  
+  } 
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #FFEDED; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #092a5694;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #092A56;
+  }
 
   .body-pink {
     background-image: url(/photos/background/background-pink.png);
@@ -32,7 +51,6 @@ p {
     overflow-x: hidden;
   }
 
-  
 .front-mainpage {
     position: relative;
     background-image: url(/photos/200kb/museum-desktop_200.webp);
@@ -163,7 +181,10 @@ p {
     transform: scale(1.05);
     .content-link {
       border-bottom: solid 2px black;
-      transition: ease-in-out 0.15s;
+      transition: ease-in-out 0.25s;
+      margin-left: 70%;
+      display: flex;
+      justify-content: end;
     }
   }
 
@@ -172,7 +193,10 @@ p {
     transform: scale(1.05);
     .content-link {
       border-bottom: solid 2px black;
-      transition: ease-in-out 0.15s;
+      transition: ease-in-out 0.25s;
+      margin-left: 45%;
+      display: flex;
+      justify-content: end;
     }
   }
 
@@ -181,7 +205,10 @@ p {
     transform: scale(1.05);
     .content-link {
       border-bottom: solid 2px black;
-      transition: ease-in-out 0.15s;
+      transition: ease-in-out 0.25s;
+      margin-left: 70%;
+      display: flex;
+      justify-content: end;
     }
   }
 }
