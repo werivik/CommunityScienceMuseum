@@ -81,72 +81,82 @@ p {
     width: 100%;
     height: 445px;
     margin-top: 69px;
+    margin-bottom: 50px;
     gap: 15px;
   }
-  
-  .content-explore {
-    background-color: #FFE88C;
-    border-radius: 5px;
+
+  .quickfind {
+    width: 100%;
+    height: 525px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 10%;
-    margin-right: 10px;
-    width: 1500px;
-    min-width: 275px;
-  }
-  
-  .content-exhibitions {
-    background-color: #B5D9FB;
-    border-radius: 5px;
-    height: 100%;
-    width: 1500px;
-    min-width: 275px;
-    margin-right: 10px;
-  }
-  
-  .content-visit {
-    background-color: #F4757E;
-    border-radius: 5px;
-    width: 1500px;
-    min-width: 275px;
     margin-right: 10%;
-    margin-left: 10px;
-    margin-top: 0px;
-  }
+
+    .content-explore, .content-exhibitions, .content-visit {
+      border-radius: 5px;
+      width: 30%;
+      height: 525px;
+      text-decoration: none;
+      color: black;
+    }
   
-  .content-visit img, .content-exhibitions img, .content-explore img  {
-    padding-top: 25px;
-    padding-top: 7%;
-    padding-left: 7%;
-    padding-right: 7%;
-    width: 87%;
-    height: 47%;
-    object-fit: cover;
-  }
+    .content-explore {
+      background-color: #FFE88C;
+    }
   
-  .content-visit-text, .content-exhibitions-text, .content-explore-text {
-    height: 125px;
-  }
+    .content-exhibitions {
+      background-color: #B5D9FB;
+    }
   
-  .content-visit-text p, .content-exhibitions-text p, .content-explore-text p {
-    margin-left: 25px;
-    margin-right: 10px;
-    font-size: 16px;
-  }
-  
-  .content-visit span {
-    font-weight: bold;
-  }
-  
-  .content-visit a, .content-exhibitions a, .content-explore a {
-    position: relative;
-    color: black;
-    text-decoration: none;
-    margin-left: 30px;
-    font-weight: bold;
-    font-family: 'Teko', sans-serif;
-  }
-  
-  .content-visit a:hover, .content-exhibitions a:hover, .content-explore a:hover {
-    border-bottom: 2px solid black;
+    .content-visit {
+      background-color: #F4757E;
+    }
+    
+    .content-visit img, .content-exhibitions img, .content-explore img  {
+      padding-top: 25px;
+      padding-top: 7%;
+      padding-left: 7%;
+      padding-right: 7%;
+      width: 87%;
+      height: 47%;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+    
+    .content-visit-text, .content-exhibitions-text, .content-explore-text {
+      height: 125px;
+    }
+    
+    .content-visit-text p, .content-exhibitions-text p, .content-explore-text p {
+      margin-left: 25px;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+    
+    .content-visit span {
+      font-weight: bold;
+    }
+    
+    .explore-link {
+      position: relative;
+      color: black;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: end;
+      padding-left: 7%;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Teko', sans-serif;
+      font-size: 20px;
+    }
+    
+    .content-visit:hover, .content-exhibitions:hover, .content-explore:hover {
+      transition: 0.25s;
+      transform: scale(1.05);
+    }
   }
   
   .mainpage-content1 h2 {
@@ -161,13 +171,14 @@ p {
   }
   
   .mainpage-biomed-content {
-  
     margin-left: 10%;
     margin-right: 10%;
   }
   
   .mainpage-biomed {
     display: flex;
+    text-decoration: none;
+    color: black;
   }
   
   .mainpage-biomed span {
@@ -176,14 +187,9 @@ p {
     width: 100%;
   }
   
-  .mainpage-biomed span a {
-    display: flex;
-    justify-content: center;
+  .mainpage-biomed span img {
     width: 100%;
-  }
-  
-  .mainpage-biomed span a img {
-    width: 100%;
+    height: 100%;
     border-radius: 5px;
     max-height: 409px;
     min-height: 350px;
@@ -204,14 +210,14 @@ p {
   
   .bio-text {
     width: 100%;
-    position: absolute;
-    margin-top: 265px;
+    position: relative;
     margin-left: 5%;
     display: inline-flex;
   }
   
   .bio-text p {
     display: block;
+    font-weight: normal;
     width: 58%;
     font-size: 17px;
   }
@@ -319,8 +325,10 @@ p {
   
   .news-text a:hover {
     border-bottom: 2px solid white;
+    transition: 0.25s;
   }
   
   .location-text a:hover, .bio-text a:hover {
     border-bottom: 2px solid black;
+    transition: 0.25s;
   }
