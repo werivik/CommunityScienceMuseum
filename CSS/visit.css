@@ -148,48 +148,60 @@ p {
   display: inline-flex;
   height: 500px;
   align-items: center;
-}
 
-.visit-textbox2-left {
-  width: 45%;
-}
+  .visit-textbox2-left {
+    width: 47%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    h2 {
+      font-size: 30px;
+      height: 100px;
+      margin-bottom: -4%;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    img {
+      margin-top: 10px;
+      height: 375px;
+      width: 90%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+  
+  .visit-textbox2-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 25%;
+    margin-left: 0px;
+    height: 450px;
 
-.visit-textbox2-left h2 {
-  padding-left: 5%;
-  line-height: 0px;
-  font-size: 30px;
-  padding-top: 4%;
-}
-
-.visit-textbox2-left img {
-  margin-top: 10px;
-  height: 375px;
-  width: 90%;
-  object-fit: cover;
-  padding: 5%;
-  border-radius: 5px;
-}
-
-.visit-textbox2-right {
-  align-items: center;
-  margin-top: 75px;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  width: 25%;
-  margin-left: 0px;
-}
-
-.visit-textbox2-right span {
-  margin-bottom: 25px;
-  font-weight: bold;
-}
-
-.visit-textbox2-right iframe {
-  height: 250px;
-  width: 475px;
-  border-radius: 5px;
-  margin-left: 250px;
+    .textbox2-text {
+      margin-top: 50px;
+    }
+  
+    span {
+      font-weight: bold;
+    }
+  
+    iframe {
+      height: 250px;
+      width: 180%;
+      border-radius: 5px;
+    }
+  }
 }
 
 .visit-textbox3-hours {
@@ -197,88 +209,104 @@ p {
 }
 
 .visit-textbox3 {
-  margin-top: 75px;
+  margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
-  background-color: #F6A6A6;
   border-radius: 5px;
   display: inline-flex;
-  height: 425px;
-}
-
-.visit-textbox3 p {
-  font-size: 17px;
-}
-
-.visit-textbox3-left {
-  width: 50%;
-}
-
-.visit-textbox3-left h2 {
-  padding-left: 5%;
-  line-height: 0px;
-  font-size: 30px;
-  padding-top: 4%;
-}
-
-.visit-textbox3-left img {
-  height: 300px;
-  min-height: 300px;
-  width: 90%;
-  object-fit: cover;
-  padding: 30px;
-  border-radius: 5px;
+  height: 400px;
   align-items: center;
-}
+  background-color: #F6A6A6;
 
-.visit-textbox3-middle {
-  margin-top: 75px;
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  width: 26%;
-}
+  p {
+    font-size: 17px;
+  }
 
-.visit-textbox3-time {
-  margin-left: 5%;
-  min-width: 125px;
-}
+  .visit-textbox3-left {
+    width: 47%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    h2 {
+      line-height: 0px;
+      font-size: 30px;
+      padding-top: 4%;
+    }
+  
+    img {
+      margin-top: 10px;
+      height: 70%;
+      width: 94%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
 
-.visit-textbox3-days {
-  font-weight: bold;
-}
+  .textbox3-week {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -75px;
+    height: 90%;
+  }
 
-.visit-textbox3-time span {
-  opacity: 60%;
-  text-decoration: line-through;
-}
+  .weekday {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    width: 26%;
+  
+    .weekday-time {
+      margin-left: 5%;
+      min-width: 125px;
+  
+      span {
+        opacity: 60%;
+        text-decoration: line-through;
+      }
+    }
+    
+    .weekday-days {
+      font-weight: bold;
+  
+      span {
+        opacity: 60%;
+        text-decoration: line-through;
+      }
+    }
+  
+  }
 
-.visit-textbox3-days span {
-  opacity: 60%;
-  text-decoration: line-through;
-}
-
-.visit-textbox3-right {
-  margin-top: 75px;
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  width: 25%;
-  margin-left: 2.5%;
-}
-
-.visit-textbox3-right-days {
-  font-weight: bold;
-}
-
-.visit-textbox3-right-time {
-  margin-left: 5%;
-  min-width: 125px;
+  .weekend {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    margin-left: 5%;
+  
+    .weekend-days {
+      font-weight: bold;
+    }
+    
+    .weekend-time {
+      margin-left: 5%;
+      min-width: 125px;
+    }
+  }
 }
 
 .visit-textbox4 {
-  margin-top: 75px;
+  margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
@@ -287,83 +315,105 @@ p {
   display: inline-flex;
   height: 500px;
   align-items: center;
+
+  .visit-textbox4-left {
+    width: 47%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    img {
+      margin-top: 10px;
+      height: 375px;
+      width: 90%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  
+    h2 {
+      font-size: 30px;
+      height: 100px;
+      margin-bottom: -4%;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .visit-textbox4-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 17px;
+    width: 46%;
+    margin-top: 50px;
+    height: 80%;
+  
+    span {
+      font-weight: bold;
+      font-size: 17px;
+    }
+  
+    .buttons {
+      display: inline-flex;
+      gap: 25px;
+      height: 25px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .visit-button1 {
+      font-size: 25px;
+      padding: 1%;
+      background-color: #092A56;
+      border-radius: 99px;
+      border: solid 2px #092A56;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+      color: #ffffff;
+  
+      &:hover {
+        background-color: #ffffff;
+        border: solid 2px #ffffff;
+        color: #092A56;
+        font-weight: bold;
+        padding-left: 5.5px;
+        padding-right: 5.5px;
+      }
+    }
+    
+    .visit-button2 {
+      border-radius: 99px;
+      border: solid 2px #092A56;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #092A56;
+  
+      &:hover {
+        background-color: #C74C55;
+        border: solid 2px #C74C55;
+        color: #B5D9FB;
+        color: white;
+      }
+    }
+    
+  }
 }
 
-.visit-textbox4-left {
-  width: 45%;
-}
 
-.visit-textbox4-left h2 {
-  padding-left: 5%;
-  line-height: 0px;
-  font-size: 30px;
-  padding-top: 4%;
-}
 
-.visit-textbox4-left img {
-  height: 375px;
-  width: 90%;
-  object-fit: cover;
-  padding: 5%;
-  border-radius: 5px;
-}
 
-.visit-textbox4-right {
-  display: flex;
-  flex-direction: column;
-  font-size: 17px;
-  width: 46%;
-}
-
-.visit-textbox4-right p span {
-  font-weight: bold;
-  font-size: 17px;
-}
-
-.visit-textbox4-right span {
-  font-size: 16px;
-  margin-bottom: 50px;
-}
-
-.visit-textbox4-right-buttons {
-  display: inline-flex;
-  gap: 25px;
-  height: 25px;
-  font-size: 20px;
-  text-align: center;
-  align-items: center;
-}
-
-.visit-button1 {
-  font-size: 25px;
-  padding: 1%;
-  background-color: #092A56;
-  border-radius: 99px;
-  border: solid 2px #092A56;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-decoration: none;
-  color: #B5D9FB;
-}
-
-.visit-button2 {
-  border-radius: 99px;
-  border: solid 2px #092A56;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-decoration: none;
-  color: #092A56;
-}
-
-.visit-button1:hover {
-  color: #092A56;
-  background-color: transparent;
-}
-
-.visit-button2:hover {
-  background-color: #092A56;
-  color: #B5D9FB;
-}
 
 .visit-content2 {
   margin-left: 10%;
@@ -378,8 +428,8 @@ p {
 .visit-yellowbox {
   background-color: #FCDD62;
   border-radius: 5px;
-  width: 350px;
-  height: 550px;
+  height: calc(2.5vw + 475px);  
+  width: 30%;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
@@ -388,7 +438,7 @@ p {
 }
 
 .visit-yellowbox img {
-  width: 300px;
+  width: 90%;
   height: 205px;
   border-radius: 5%;
   object-fit: cover;
