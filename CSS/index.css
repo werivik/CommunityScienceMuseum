@@ -42,136 +42,135 @@ p {
     width: 100%;
     background-size: cover;
     background-position: center;
-  } 
-  
-  .front-mainpage h1 {
-    font-weight: 400;
-    position: absolute;
-    color: white;
-    font-size: clamp(55px, calc(2.5vw + 7vh), 95px);          
-    width: 50px;
-    margin-left: 10%;
-    margin-top: 150px;
-    line-height: 95px;
-  }
-  
-  .front-mainpage h1 span {
-    font-weight: 800;
-  }
-  
-  .front-image img {
-    opacity: 0%;
-    height: 0px;
-    width: 0px;
-  }
-  
-  .front-mainpage::after {
-    content: "";
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.661));
-  }
-  
-  .mainpage-content1 {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 445px;
-    margin-top: 69px;
-    margin-bottom: 50px;
-    gap: 15px;
-  }
+} 
 
-  .quickfind {
-    width: 100%;
+.front-mainpage h1 {
+  font-weight: 400;
+  position: absolute;
+  color: white;
+  font-size: clamp(55px, calc(2.5vw + 7vh), 95px);          
+  width: 50px;
+  margin-left: 10%;
+  margin-top: 150px;
+  line-height: 95px;
+}
+
+.front-mainpage h1 span {
+  font-weight: 800;
+}
+
+.front-image img {
+  opacity: 0%;
+  height: 0px;
+  width: 0px;
+}
+
+.front-mainpage::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.661));
+}
+
+.mainpage-content1 {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 445px;
+  margin-top: 69px;
+  margin-bottom: 50px;
+  gap: 15px;
+}
+
+.quickfind {
+  width: 100%;
+  height: 525px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  .content-explore, .content-exhibitions, .content-visit {
+    border-radius: 5px;
+    width: 30%;
     height: 525px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    text-decoration: none;
+    color: black;
+  }
 
-    .content-explore, .content-exhibitions, .content-visit {
-      border-radius: 5px;
-      width: 30%;
-      height: 525px;
-      text-decoration: none;
-      color: black;
-    }
-  
-    .content-explore {
-      background-color: #FFE88C;
-    }
-  
-    .content-exhibitions {
-      background-color: #B5D9FB;
-    }
-  
-    .content-visit {
-      background-color: #F4757E;
-    }
-    
-    .content-visit img, .content-exhibitions img, .content-explore img  {
-      padding-top: 25px;
-      padding-top: 7%;
-      padding-left: 7%;
-      padding-right: 7%;
-      width: 87%;
-      height: 47%;
-      border-radius: 5px;
-      object-fit: cover;
-    }
-    
-    .content-visit-text, .content-exhibitions-text, .content-explore-text {
-      height: 125px;
-    }
-    
-    .content-visit-text p, .content-exhibitions-text p, .content-explore-text p {
-      margin-left: 9%;
-      margin-right: 10px;
-      font-size: clamp(9px, calc(1vw + 0.7vh), 16px);          
-    }
-    
-    .content-visit span {
-      font-weight: bold;
-    }
-    
-    .explore-link {
-      position: relative;
-      color: black;
-      width: 100%;
-      height: 50px;
-      margin-top: 7%;
-      display: flex;
-      align-items: end;
-      margin-left: 9%;
-      text-decoration: none;
-      font-weight: bold;
-      font-family: 'Teko', sans-serif;
-      font-size: clamp(10px, calc(1vw + 0.7vh), 20px);          
-    }
-    
-    .content-visit:hover, .content-exhibitions:hover, .content-explore:hover {
-      transition: 0.25s;
-      transform: scale(1.05);
-    }
+  .content-explore {
+    background-color: #FFE88C;
+  }
+
+  .content-exhibitions {
+    background-color: #B5D9FB;
+  }
+
+  .content-visit {
+    background-color: #F4757E;
   }
   
-  .mainpage-content1 h2 {
-    left: 5000px;
-    position: absolute;
+  .content-visit img, .content-exhibitions img, .content-explore img  {
+    padding-top: 25px;
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 87%;
+    height: 47%;
+    border-radius: 5px;
+    object-fit: cover;
   }
   
-  .mainpage-content2 {
+  .content-visit-text, .content-exhibitions-text, .content-explore-text {
+    height: 125px;
+  }
+  
+  .content-visit-text p, .content-exhibitions-text p, .content-explore-text p {
+    margin-left: 9%;
+    margin-right: 10px;
+    font-size: clamp(9px, calc(1vw + 0.7vh), 16px);          
+  }
+  
+  .content-visit span {
+    font-weight: bold;
+  }
+  
+  .explore-link {
+    position: relative;
+    color: black;
     width: 100%;
-    margin-bottom: 69px;
-    margin-top: 69px;
+    height: 50px;
+    margin-top: 7%;
+    display: flex;
+    align-items: end;
+    margin-left: 9%;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Teko', sans-serif;
+    font-size: clamp(10px, calc(1vw + 0.7vh), 20px);          
   }
   
-  .mainpage-biomed-content {
+  .content-visit:hover, .content-exhibitions:hover, .content-explore:hover {
+    transition: 0.25s;
+    transform: scale(1.05);
+  }
+}
+
+.mainpage-content1 h2 {
+  left: 5000px;
+  position: absolute;
+}
+
+.mainpage-content2 {
+  width: 100%;
+  margin-bottom: 69px;
+  margin-top: 69px;
+} 
+.mainpage-biomed-content {
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
@@ -264,7 +263,6 @@ p {
     }
   }
 }
-
 .mainpage-biomed:hover {
   transform: scale(1.05);
   transition: ease-in-out 0.5s;
@@ -295,7 +293,6 @@ p {
     }
   }
 }
-
 .mainpage-content-sec2 {
   display: flex;
   flex-direction: row;
@@ -306,7 +303,6 @@ p {
   margin-right: 10%;
   height: 490px;
 }
-
 .mainpage-news {
   height: 100%;
   width: 55%;
@@ -337,16 +333,18 @@ p {
     font-family: 'Teko', sans-serif;
   
     h3 {
-      font-size: 45px;
+      font-size: clamp(22px, calc(2.5vw + 0.9vh), 45px);          
+      width: 75%;
+      margin-right: 25%;    
     }
   
     .news-text {
-      width: 100%;
+      width: 90%;
       margin-left: 4%;
       position: absolute;
       
       p {
-        font-size: 20px;
+        font-size: clamp(9px, calc(1.5vw + 0.9vh), 20px);          
         font-style: italic;
       }
     }
@@ -363,7 +361,6 @@ p {
     }
   }
 }
-
 .mainpage-news:hover {
   transition: 0.35s;
   transform: scale(1.05);
@@ -379,7 +376,6 @@ p {
     }
   }
 }
-
 
 .mainpage-location {
   height: 100%;
@@ -415,8 +411,9 @@ p {
       margin-left: 4%;
   
       h3 {
-        font-size: 45px;
-        width: 270px;
+        font-size: clamp(22px, calc(2.5vw + 0.9vh), 45px);          
+        width: 75%;
+        margin-right: 25%;
       }
   
       .location-link {
@@ -431,7 +428,6 @@ p {
     }
   }
 }
-
 .mainpage-location:hover {
   transition: 0.35s;
   transform: scale(1.05);
@@ -449,5 +445,3 @@ p {
     }
   }
 }
-
-
