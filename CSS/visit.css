@@ -96,7 +96,7 @@ p {
   margin-left: 10%;
   margin-right: 10%;
   display: inline-flex;
-  font-size: 20px;
+  font-size: clamp(14px, calc(1vw + 0.7vh), 20px);          
 }
 
 .visit-textbox1 img {
@@ -238,6 +238,7 @@ p {
       line-height: 0px;
       font-size: 30px;
       padding-top: 4%;
+      width: 100%;
     }
   
     img {
@@ -255,18 +256,19 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: -75px;
-    height: 90%;
+    height: 95%;
   }
 
   .weekday {
     margin-top: 75px;
+    margin-left:6%;
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    font-size: clamp(9px, calc(2.5vw + 0.9vh), 20px);          
     width: 26%;
   
     .weekday-time {
-      margin-left: 5%;
+      margin-left: 7%;
       min-width: 125px;
   
       span {
@@ -291,8 +293,8 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    font-size: 20px;
-    margin-left: 5%;
+    font-size: clamp(9px, calc(2.5vw + 0.9vh), 20px);          
+    margin-left: 50px;
   
     .weekend-days {
       font-weight: bold;
@@ -350,28 +352,27 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 17px;
+    font-size: clamp(9px, calc(1vw + 0.7vh), 17px);          
     width: 46%;
     margin-top: 50px;
     height: 80%;
   
     span {
       font-weight: bold;
-      font-size: 17px;
+      font-size: clamp(9px, calc(1vw + 0.7vh), 17px);          
     }
   
     .buttons {
       display: inline-flex;
       gap: 25px;
       height: 25px;
-      font-size: 20px;
       margin-bottom: 10px;
       text-align: center;
       align-items: center;
     }
   
     .visit-button1 {
-      font-size: 25px;
+      font-size: clamp(15px, calc(1vw + 0.7vh), 25px);          
       padding: 1%;
       background-color: #092A56;
       border-radius: 99px;
@@ -397,6 +398,7 @@ p {
       padding-left: 10px;
       padding-right: 10px;
       margin-top: 10px;
+      font-size: clamp(13px, calc(1vw + 0.7vh), 20px);          
       text-decoration: none;
       color: #092A56;
   
@@ -410,9 +412,6 @@ p {
     
   }
 }
-
-
-
 
 
 .visit-content2 {
