@@ -253,6 +253,7 @@ html {
   color: #91C0EC;
 }
 
+
 @media (max-width: 1500px) {
   .exhibitions-sec1 {
     overflow-x: scroll;
@@ -262,7 +263,6 @@ html {
   }
 }
 
-/*
 @media (max-width: 1475px) {
   .explorations {
     overflow-y: hidden;

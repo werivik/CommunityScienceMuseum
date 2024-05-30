@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@100;200;300;400;500;900&display=swap');
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFEDED; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #092a5694;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #092A56;
+}
+
 p {
     font-family: 'Roboto Slab', serif;
   }
@@ -21,24 +40,6 @@ p {
     width: 100%;
   } 
   
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #FFEDED; 
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #092a5694;
-    border-radius: 10px;
-    border: 3px solid #f1f1f1; 
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #092A56;
-  }
 
 .body-blue {
     background-image: url(/photos/background/background-blue.png);
@@ -55,7 +56,7 @@ p {
     position: relative;
     background-image: url(/photos/200kb/statue_200reresized.jpg);
     display: block;
-    height: 500px;
+    height: clamp(250px, 50vw, 500px);    
     width: 100%;
     background-size: cover;
     background-position: 50% 100%;
@@ -63,11 +64,14 @@ p {
   
   .front-exhibitions h1 {
     position: absolute;
+    height: 85%;
+    display: flex;
+    align-items: end;
+    top: 0;
     color: white;
-    font-size: 85px;
+    font-size: clamp(45px, calc(5vw + 1vh), 85px);          
     width: 400px;
     margin-left: 10%;
-    margin-top: 220px;
   }
 
   .front-image img {
@@ -90,80 +94,78 @@ p {
     margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
-  }
-  
-  .exhibitions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    aspect-ratio: 2.5 / 1;
-    overflow-x: hidden;
-    overflow-y: hidden;
 
-    flex-wrap: wrap;
-  }
+    .exhibitions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      aspect-ratio: 2.5 / 1;
+      overflow-x: hidden;
+      overflow-y: hidden;
   
-  .exhibitions-box {
-    width: 100%;
-    position: relative;
-    text-align: center;
-    margin-inline: 5px;
-    flex: 1 1 calc(25% - 10px);    
-    aspect-ratio: 0.707;
-    box-sizing: border-box;
-  }
+      flex-wrap: wrap;
   
-  .exhibitions-box a {
-    text-decoration: none;
-  }
-  
-  .exhibitions-box-text {
-    width: 100%;
-    position: absolute;
-    color: white;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .exhibitions-box-text h3 {
-    font-size: 1.9vw;
-  }
-  
-  .exhibitions-box-text h3 span {
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 5px;
-    backdrop-filter: blur(3px);
-  }
-  
-  .exhibitions-box a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform .2s;
-  }
-  
-  .exhibitions-box a img:hover {
-    transform: scale(1.07);
-    transition: 0.25s;
-  }
-  .exhibitions-box-text:hover {
-    display: none;
-    transition: 0.25s;
-  }
+      .exhibitions-box {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-inline: 5px;
+        flex: 1 1 calc(25% - 10px); 
+        min-width: 100px;   
+        aspect-ratio: 0.707;
+        box-sizing: border-box;
+    
+        a {
+          text-decoration: none;
 
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform .2s;
+          }
+          &:hover {
+
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+    
+        .exhibitions-box-text {
+          width: 100%;
+          position: absolute;
+          color: white;
+          top: 85%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      
+          h3 {
+            font-size: 1.9vw;
+      
+            span {
+              background: rgb(0, 0, 0);
+              background: rgba(0, 0, 0, 0.6);
+              padding: 10px;
+              padding-left: 25px;
+              padding-right: 25px;
+              border-radius: 5px;
+              backdrop-filter: blur(3px);
+              font-size: clamp(12px, calc(1vw + 0.9vh), 25px);          
+            }
+          }
+        }
+      }
+    }
+  }
 
 .exhibitions-sec2 {
   padding: 20px;
   box-sizing: border-box;
-  margin-left: 10%;
-  margin-right: 10%; 
+  margin-left: 8%;
+  margin-right: 8%; 
   
   a {
     display: flex;
@@ -255,7 +257,8 @@ p {
       
         .exhibitions-biology-text-button {
           display: none;
-          color: white;
+          color: black;
+          height: 50px;
           text-decoration: none;
         }
       }
@@ -313,6 +316,35 @@ p {
 }
 
 @media (max-width: 1000px){
+  .exhibitions-sec1 {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    .exhibitions {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      height: 400px;
+
+      .exhibitions-box{
+        flex: 0 0 cacl(45% - 10px);
+        min-width: calc(45% - 10px);
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #FFEDED; 
+      border-radius: 10px;
+    }
+  }
+
+  
+}
+
+@media (max-width: 1000px){
   .exhibitions-sec2 {    
     a {
   
@@ -322,7 +354,6 @@ p {
         }
       
       }
-    
     }
   }
 }
@@ -336,6 +367,10 @@ p {
         
           p {
             padding-bottom: 10%;
+          }
+
+          .exhibitions-biology-text-button {
+            padding-bottom: 0%;
           }
         }
       
@@ -360,6 +395,135 @@ p {
       
       }
     
+    }
+  }
+}
+
+@media (max-width: 800px){
+  .exhibitions-sec2 {    
+    a {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 100%;
+  
+      .exhibitions-biology {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        padding-top: 350px;
+        width: 100%;
+        border-radius: 5px;
+      
+        span {
+          display: none;
+        }
+      
+        .exhibition-biology-box-image {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          max-height: 409px;
+          min-height: 375px;
+      
+          img {
+            width: 100%;
+            border-radius: 5px;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      
+        .exhibitions-biology-text { 
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: absolute;
+          width: 75%;
+          margin-left: 25px;
+          height: 100%;
+        
+          h3 {
+            font-size: 28px;
+            color: white;
+          }
+        
+          p {
+            width: 100%;
+            height: 100%;
+            margin-right: 25px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.498);
+            border-radius: 5px;
+            padding: 5px;
+            padding-bottom: 0%;
+            height: 25%;
+            color: white;
+          }
+        
+          .exhibitions-biology-text-button {
+            display: none;
+            color: black;
+            height: 35px;
+            text-decoration: none;
+          }
+        }
+      
+      }
+  
+      &:hover {
+        transition: 0.35s;
+        transform: scale(1.05);
+  
+        .exhibitions-biology {
+  
+          transition: 0.35s;
+  
+          .exhibitions-biology-text {
+            padding-bottom: 25px;
+  
+            h3 {
+              padding-top: 13px;
+            }
+  
+            p {
+              display: none;
+            }
+          
+            .exhibitions-biology-text-button {
+              display: flex;
+              color: rgb(255, 255, 255);
+              border-bottom: solid 2px rgb(255, 255, 255);
+              align-items: end;
+              width: 20%;
+              margin-left: 80%;
+              transition: 0.35s;
+            }
+  
+            .exhibitions-biology-text-button::before {
+              content: '';
+              position: absolute;
+              right: 0;
+              left: 100%;
+              top: 100.1%;
+              transform: translateY(-50%);
+              width: 0;
+              height: 0;
+              border-top: 7px solid transparent;
+              border-bottom: 7px solid transparent;
+              border-left: 7px solid rgb(255, 255, 255);
+              transition: right 0.5s;
+            }
+          }
+        
+        }
+      }
+  
     }
   }
 }

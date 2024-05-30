@@ -1,0 +1,49 @@
+.accessibility {
+    margin-top: 50px;
+    background-color: #91C0EC;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .accessibility-text {
+    padding: 2%;
+  }
+  
+  .accessibility-text h3 {
+    font-size: 28px;
+    margin-left: 5%;
+  }
+  
+  .accessibility-text p {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+  }
+  
+  .accessibility a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 99px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    margin-right: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    font-size: 25px;
+    min-width: 90px;
+  }
+  
+  .accessibility a:hover {
+    background-color: white;
+    color: #91C0EC;
+  }
