@@ -140,15 +140,6 @@ header {
     right: 0;
   }
 
-  
-@media (max-width: 1350px) {
-    header .logo {
-        margin-left: 5%;
-      }
-      header nav {
-        margin-right: 3%;
-      }
-}
 
 @media (max-width: 975px) {
     .hamburger, .hamburger-menu {
