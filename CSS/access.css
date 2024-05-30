@@ -21,8 +21,7 @@
   .accessibility-text p {
     font-size: 20px;
     margin-left: 5%;
-    margin-right: 5%;
-    width: 100%;
+    width: 90%;
   }
   
   .accessibility a {
@@ -46,4 +45,20 @@
   .accessibility a:hover {
     background-color: white;
     color: #91C0EC;
+  }
+
+  @media (max-width: 800px) {
+    .accessibility {
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .accessibility a {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 45px;
+        margin-left: 35%;
+        max-width: 100px;
+      }
+      
   }
