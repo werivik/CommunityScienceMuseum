@@ -14,12 +14,12 @@
   }
   
   .accessibility-text h3 {
-    font-size: 28px;
+    font-size: clamp(20px, calc(1vw + 2vh), 28px);          
     margin-left: 5%;
   }
   
   .accessibility-text p {
-    font-size: 20px;
+    font-size: clamp(14px, calc(1vw + 1vh), 20px);          
     margin-left: 5%;
     width: 90%;
   }
