@@ -1,7 +1,8 @@
 # CommunityScienceMuseum - Weronika Vik
  This is my Semester Course Assignment for winter 2023.
 
- The Website is designed for kids, families and teachers.
+ This Website is a Science museum for Kids, Families and Teachers. The Design is kids-friendly and is easy to maneuver for everybody. 
+
  The following pages are made: 
  - About Us
  - Contact Us
