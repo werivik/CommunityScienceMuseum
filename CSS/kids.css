@@ -229,7 +229,7 @@
     transition: 0.25s;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     .kids-holiday img {
       display: none;
     }
@@ -237,6 +237,10 @@
     .kids-holiday-textbox {
       margin-left: 5%;
     }
+
+  }
+
+  @media (max-width: 900px) {
 
     .kids-club { 
       margin-left: 3%;
