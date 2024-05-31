@@ -2,7 +2,7 @@
     position: relative;
     background-image: url(/photos/200kb/statue_200reresized.jpg);
     display: block;
-    height: 500px;
+    height: clamp(250px, 50vw, 500px);    
     width: 100%;
     background-size: cover;
     background-position: 50% 100%;
@@ -10,11 +10,14 @@
   
   .front-explore h1 {
     position: absolute;
+    height: 85%;
+    display: flex;
+    align-items: end;
+    top: 0;
     color: white;
-    font-size: 85px;
+    font-size: clamp(45px, calc(5vw + 1vh), 85px);          
     width: 400px;
     margin-left: 10%;
-    margin-top: 220px;
   }
 
   .front-image img {
@@ -51,8 +54,9 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding-bottom: 50px;
-    aspect-ratio: 2 / 1.05;
+    padding-bottom: 5%;
+    padding-top: 2.5%;
+    aspect-ratio: 2.5 / 1;
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -63,8 +67,9 @@
     width: 100%;
     position: relative;
     text-align: center;
-    margin-inline: 15px;
-    flex: 1 1 calc(25% - 10px);    
+    margin-inline: 5px;
+    flex: 1 1 calc(25% - 10px); 
+    min-width: 100px;   
     aspect-ratio: 0.707;
     box-sizing: border-box;
   }
@@ -83,16 +88,18 @@
   }
   
   .explore-box-text h3 {
-    font-size: 35px;
+    font-size: clamp(12px, calc(1vw + 0.9vh), 25px);   
   }
   
   .explore-box-text h3 span {
-    background: rgba(0, 0, 0, 0.682);
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6);
     padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 5px;
     backdrop-filter: blur(3px);
+    font-size: clamp(12px, calc(1vw + 0.9vh), 25px);   
   }
   
   .explore-box a img {
@@ -110,7 +117,7 @@
   
   .explore-sec2 {
     margin-top: 100px;
-    margin-bottom: 700px;
+    margin-bottom: 650px;
     margin-left: 10%;
     margin-right: 10%;
 
@@ -133,19 +140,23 @@
   .explore-exhibitions {
     color: white;
     text-decoration: none;
-    max-height: 600px;
+    height: 500px;
     width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 
     .explore-exhibitions-box {
       background-image: url(/photos/200kb/elephant_200.webp);
-      height: 100%;
-      max-height: 600px;
+      height: 500px;
       width: 80%;
       border-radius: 5px;
       object-fit: cover;
       background-position: center;
       background-size: cover;
       position: absolute;
+
+      margin-bottom: 0px;
+      padding-bottom: 0px;
 
       .exhibition-box-text {
 
@@ -166,7 +177,7 @@
           transition: 0.35s;
           height: 95%;
           color: white;
-          font-size: 26px;
+          font-size: clamp(17px, calc(1vw + 0.9vh), 26px);   
           margin-left: 4%;
           top: 0;
         }
@@ -231,3 +242,8 @@
   }
     
   
+  @media (max-width: 800px) {
+    .explore-sec2 {
+      margin-bottom: 600px;
+    }
+  }
