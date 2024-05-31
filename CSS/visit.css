@@ -10,13 +10,14 @@
 
 .front-visit h1 {
   position: absolute;
-  height: 100%;
+  height: 85%;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  justify-content: end;
+  align-items: flex-start;  
   top: 0;
   color: white;
-  font-size: clamp(45px, calc(5vw + 1vh), 85px);          
+  font-size: clamp(45px, calc(4vw + 1.8vh), 85px);  
   width: 400px;
   margin-left: 10%;
 }
@@ -28,7 +29,7 @@
 }
 
 .front-visit h1 span {
-  font-size: 80px;
+  font-size: clamp(40px, calc(4vw + 3vh), 80px);  
   font-weight: bolder;
 }
 
@@ -42,10 +43,18 @@
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0,0,0,0.65));
 }
 
-.visit-textbox1 {
-  margin-top: 50px;
+.visit-content {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.visit-content1 {
+  width: 100%;
+}
+
+.visit-textbox1 {
+  margin-top: 50px;
+  width: 100%;
   display: inline-flex;
   font-size: clamp(14px, calc(1vw + 0.7vh), 20px);          
 }
@@ -57,26 +66,30 @@
 }
 
 .visit-textbox1-text {
+  font-family: 'Roboto Slab', serif;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-self: center;
   padding-right: 5%;
+
+  font-size: clamp(12px, calc(0.9vw + 0.9vh), 20px);          
+
+  span {
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    display: flex;
+    margin-top: 90px;
+    color: black;
+    font-weight: bolder;
+    width: 220px;
+    font-family: 'Roboto Slab', serif;
+  }
 }
 
-.visit-textbox1-text span {
-  font-weight: bold;
-}
-
-.visit-textbox1-text a {
-  text-decoration: none;
-  display: flex;
-  margin-top: 90px;
-  color: black;
-  font-weight: bolder;
-  width: 220px;
-  font-family: 'Roboto Slab', serif;
-}
 
 .visit-textbox1 img {
   width: 100%;
@@ -85,15 +98,22 @@
   object-position: right;
 }
 
-.visit-textbox1-text a:hover {
-  border-bottom: 2px solid black;
+.visit-textbox1-text:hover {
+
+  a {
+    display: flex;
+    color: black;
+    border-bottom: solid 2px rgb(0, 0, 0);
+    align-items: end;
+    width: 45%;
+    transition: 0.35s;
+    margin-bottom: -2px;
+  }
 }
 
 .visit-textbox2 {
   margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  width: 100%;  
   background-color: #B5D9FB;
   border-radius: 5px;
   display: inline-flex;
@@ -112,7 +132,7 @@
     justify-content: center;
   
     h2 {
-      font-size: 30px;
+      font-size: clamp(20px, calc(0.9vw + 2vh), 30px);          
       height: 100px;
       margin-bottom: -4%;
       padding: 0px;
@@ -134,7 +154,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: clamp(12px, calc(0.9vw + 0.9vh), 20px);          
     width: 25%;
     margin-left: 0px;
     height: 450px;
@@ -155,23 +175,52 @@
   }
 }
 
-.visit-textbox3-hours {
+.visit-openinghours {
+  background-color: #FFE88C;
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2.5%;
+  margin-top: 75px;
+
+  h3 {
+    font-size: clamp(20px, calc(0.9vw + 0.9vh), 25px);          
+  }
+
+  .openinghours-days-time {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(12px, calc(0.9vw + 0.9vh), 20px);          
+  }
+  
+  .openinghours-days-time span {
+    opacity: 60%;
+    text-decoration: line-through;
+  }
+  
+  .openinghours-days {
+    margin-right: 15px;
+  }
+  
+  .openinghours-time {
+    min-width: 100%;
+  }
 }
 
 .visit-textbox3 {
   margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  width: 100%;
   border-radius: 5px;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   height: 400px;
   align-items: center;
   background-color: #F6A6A6;
 
   p {
-    font-size: 17px;
+    font-size: clamp(12px, calc(0.9vw + 0.9vh), 20px);          
   }
 
   .visit-textbox3-left {
@@ -187,9 +236,10 @@
   
     h2 {
       line-height: 0px;
-      font-size: 30px;
+      font-size: clamp(20px, calc(0.9vw + 2vh), 30px);          
       padding-top: 4%;
       width: 100%;
+      min-width: 100%;
     }
   
     img {
@@ -260,9 +310,7 @@
 
 .visit-textbox4 {
   margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  width: 100%;
   background-color: #B5D9FB;
   border-radius: 5px;
   display: inline-flex;
@@ -364,22 +412,20 @@
   }
 }
 
-
 .visit-content2 {
-  margin-left: 10%;
-  margin-right: 10%;
   margin-top: 75px;
-  display: inline-flex;
-  width: 80%;
- justify-content: space-between;
- gap: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .visit-yellowbox {
   background-color: #FCDD62;
   border-radius: 5px;
   height: calc(2.5vw + 475px);  
-  width: 30%;
+  width: 100%;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
@@ -406,4 +452,17 @@
   padding: 4%;
   font-size: 15px;
   margin: 0px;
+}
+
+
+@media (max-width: 900px) {
+
+  .visit-textbox3 {
+    display: none;
+  }
+
+  .visit-openinghours {
+    display: flex;
+  }
+
 }
