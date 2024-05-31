@@ -123,36 +123,31 @@ footer {
     margin-bottom: -3px;
   }
 
-  @media (max-width: 600px) {
+
+  @media (max-width: 550px) {
     .footer-container {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 20%;
       }
-      .aboutus ol {
-        display: none;
+
+      .footer-openinghours {
+        padding: 0px;
+        margin: 0px;
+
       }
-    
-      .contactus ol {
-        display: none;
+
+      .aboutus {
+        margin: 0px;
+        padding: 0px;
       }
-    
+
       .contactus {
-        padding-right: 0%;
-        padding-bottom: 50px;
+        padding: 0px;
+        margin: 0px;
+
       }
   }
 
-  @media (max-width: 1350px) {
-    .footer-openinghours {
-        padding-left: 5%;
-      }
-      .contactus {
-        padding-right: 15%;
-      }
-  }
 
-  @media (max-width: 975px) {
-    .footer-openinghours {
-        padding-left: 5%;
-      }
-  }
