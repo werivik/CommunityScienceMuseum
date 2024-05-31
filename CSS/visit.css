@@ -59,12 +59,6 @@
   font-size: clamp(14px, calc(1vw + 0.7vh), 20px);          
 }
 
-.visit-textbox1 img {
-  height: 500px;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
 .visit-textbox1-text {
   font-family: 'Roboto Slab', serif;
   height: 100%;
@@ -89,8 +83,6 @@
     font-family: 'Roboto Slab', serif;
   }
 }
-
-
 .visit-textbox1 img {
   width: 100%;
   height: 450px;
@@ -456,6 +448,50 @@
 
 
 @media (max-width: 900px) {
+
+  .visit-textbox1 img {
+    display: none;
+  }
+
+  .visit-textbox2 {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .visit-textbox2-left {
+      width: 100%;
+      height: 25%;
+      padding-bottom: 0%;
+      margin: 0;
+      align-items: center;
+    
+      img {
+        display: none;
+      }
+    }
+    
+    .visit-textbox2-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      margin-left: 0px;
+    
+      height: 100%;
+
+      .textbox2-text {
+        margin-top: 0px;
+        margin-bottom: 35px;
+      }
+    
+      iframe {
+        height: 250px;
+        width: 80%;
+      }
+    }
+  }
 
   .visit-textbox3 {
     display: none;
