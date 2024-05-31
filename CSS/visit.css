@@ -337,7 +337,7 @@
     }
   
     h2 {
-      font-size: 30px;
+      font-size: clamp(22px, calc(1vw + 0.7vh), 30px);          
       height: 100px;
       margin-bottom: -4%;
       padding: 0px;
@@ -444,13 +444,13 @@
 }
 
 .visit-yellowbox h3 {
-  font-size: 30px;
+  font-size: clamp(19px, calc(1vw + 0.7vh), 25px);          
   margin-bottom: 0px;
 }
 
 .visit-yellowbox p {
   padding: 4%;
-  font-size: 15px;
+  font-size: clamp(9px, calc(1vw + 0.7vh), 15px);          
   margin: 0px;
 }
 
@@ -508,6 +508,15 @@
       }
       
     }
+  }
+
+  .visit-yellowbox {
+    height: 100%;  
+    min-height: 250px;
+  }
+
+  .visit-yellowbox img {
+    display: none;
   }
 
 }
